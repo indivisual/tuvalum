@@ -17,6 +17,8 @@
   }
 
   .checkout-body {
+    text-align: left;
+    position: relative;
     min-height: calc(100vh - 397px);
     margin: rem(27) 0 0;
     @media only screen and (max-width: $screen-xs) { 

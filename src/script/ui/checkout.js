@@ -12,7 +12,9 @@ Tvm.Checkout = function(){
     openBoxes();
     setupArrowMenu();
 
-    //Tvm.Overlay.setOverlay($('.tvm-checkout'), 'overlay-checkout', Tvm.Checkout.setupCheckoutTabs());
+    if (isDesktop) {
+      setupStickySidebar();
+    }
     
 	}
 
@@ -69,3 +71,54 @@ Tvm.Checkout = function(){
 	return _api;
 
 }();
+
+function setupStickySidebar() {
+  var headerHeight = $('.header-section').outerHeight() + $('.arrow-menu').outerHeight();
+  var windowHeight = $(window).outerHeight();
+ 
+  $(window).on('scroll', function() {
+    var scroll =  $(this).scrollTop();
+
+    if (scroll >= headerHeight) {
+      //sidebar to fixed, set height and custom scrollbar
+      $('.order-summary').addClass('order-summary--fixed').css({
+        top: 0,
+        maxHeight: windowHeight
+      });
+    } else {
+      removeStickySidebar();
+      lastScrollTop = 0;
+    }
+
+    //sticky sidebar stop at footer
+    if (scroll + $('.order-summary').outerHeight() > $('.checkout-foot').offset().top) {
+      $('.order-summary').removeClass('order-summary--fixed').css({
+        top: 'auto',
+        bottom: 0
+      });
+
+      //scroll up
+      if (scroll <= lastScrollTop) {
+        //sticky sidebar is always visible
+					if (scroll + headerHeight < $('.order-summary').offset().top) {
+						$('.order-summary').css({
+							top: 0,
+							bottom: 'auto'
+						});
+					}
+					lastScrollTop = scroll + 1;
+      //scroll down
+      } else {
+        lastScrollTop = scroll - 1;
+      }
+    }
+  });
+}
+function removeStickySidebar() {
+  //sidebar to absolute, set height to auto and remove custom scrollbar
+  $('.order-summary').removeClass('order-summary--fixed').css({
+    top: 'auto',
+    bottom: 'auto',
+    maxHeight: 'auto'
+  });
+}

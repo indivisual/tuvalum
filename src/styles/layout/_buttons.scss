@@ -15,6 +15,10 @@
 	padding-top: rem(18);
 }
 
+button.btn {
+	padding: 0;
+}
+
 .btn-disabled {
 	background: $hierro;
 	color:$carbon;

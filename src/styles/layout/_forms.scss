@@ -20,6 +20,9 @@
 	font-size:rem(14);
 	font-family:$font-regular;
 	color: $carbon;
+	&:focus {
+		border: 2px solid #439AFF;
+	}
 }
 
 .input-textarea {
@@ -75,6 +78,7 @@
 
 .form-inline > div {
 	display:inline-block;
+	vertical-align: top;
 }
 
 .form-inline > div:first-child:nth-last-child(1) {
@@ -167,6 +171,31 @@
 	}
 }
 
+.input-group {
+	.messages {
+		text-align: left;
+		padding: rem(4) 0;
+		font-size: rem(12);
+		line-height: rem(15);
+	}
+}
+
+.has-error {
+	input {
+		border: 2px solid #FF5D5D;
+	}
+	.messages {
+		color: #FF5D5D;
+	}
+}
+.has-success {
+	input {
+		border: 2px solid #2BE97D;
+	}
+	.messages {
+		color: #2BE97D;
+	}
+}
 
 
 

@@ -1,5 +1,13 @@
 .order-summary {
   text-align: left;
+  position: absolute;
+  overflow: auto;
+  @media only screen and (max-width: $screen-sm) {
+    position: relative;
+  }
+  &--fixed {
+    position: fixed;
+  }
   &__content {
     @include border-radius(2);
     border: 1px solid $platino;
@@ -84,7 +92,7 @@
     .text-input {
       border: 1px solid #CFD4E5;
       background-color: #fff;
-      max-width: rem(200);
+      max-width: calc(100% - 105px);
       height: rem(46);
       display: inline-block;
       vertical-align: middle;
@@ -92,7 +100,7 @@
     .btn {
       display: inline-block;
       vertical-align: middle;
-      max-width: calc(100% - 225px);
+      max-width: rem(80);
     }
   }
   &__secure-payment {
