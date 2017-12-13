@@ -120,9 +120,8 @@ module.exports = function (grunt) {
           force: true
         },
         files: [{
-          dot: true,
           src: [
-            '<%= config.dist %>/_*.*'
+            '<%= config.dist %>/_*'
           ]
         }]
       },
@@ -635,6 +634,7 @@ module.exports = function (grunt) {
     'modernizr:dist',  // Copia el modernizr.js
     'copy:vendor',
     'processhtml:pre', // Cambia la ruta del css en los html de pre
+    'clean:dashed',
     //'filerev', // Sustituye los nombres de imágenes y archivos aleatoriamente y cambia los enlaces a ellos, para evitar cachés.
     'usemin' // Sustituye los href de los html con las nuevas rutas.
     //'htmlmin' // Comprime los htmls.
