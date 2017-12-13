@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="192px" height="192px" viewBox="0 0 192 192" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>circle-green</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="69.3057597%" y1="100%" x2="69.3057597%" y2="0%" id="linearGradient-1">
+            <stop stop-color="#D0FF62" offset="0%"></stop>
+            <stop stop-color="#34D397" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Style-Guide" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Style-guide/imagery" transform="translate(-418.000000, -1090.000000)" fill="url(#linearGradient-1)">
+            <path d="M514,1282 C460.980664,1282 418,1239.01934 418,1186 C418,1132.98066 460.980664,1090 514,1090 C567.019336,1090 610,1132.98066 610,1186 C610,1239.01934 567.019336,1282 514,1282 Z M513.5,1271 C560.720346,1271 599,1232.72035 599,1185.5 C599,1138.27965 560.720346,1100 513.5,1100 C466.279654,1100 428,1138.27965 428,1185.5 C428,1232.72035 466.279654,1271 513.5,1271 Z" id="circle-green"></path>
+        </g>
+    </g>
+</svg>

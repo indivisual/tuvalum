@@ -1,0 +1,203 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <title>Tuvalum</title>
+    <meta name="description" content="">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2, user-scalable=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <!-- <link rel="shortcut icon" href="favicon.ico"> 
+    <link rel="apple-touch-icon" href="apple-touch-icon.png"> -->
+
+
+
+    <link rel="stylesheet" href="styles/main.css">
+      
+    <script src="script/vendor/modernizr.js"></script>
+    
+
+</head>
+
+<body>
+
+    <div class="simple-header-section header-section">
+   <a href="/" class="logo-link"><img src="imgs/logo-tvm.png" alt="Ir a la página principal" class="simple-logo-img"></a>
+</div>
+
+    <!-- Arrow menu example. Class 'activated' to 'li' to activated section. Class checked to 'i' to add check -->  
+<div class="arrow-menu checkout-arrow-menu">
+   <ol>
+       <li><i></i>1. Revisión <span>de pedido</span>
+       <li><i></i>2. Envío
+       <li><i></i>3. Pago
+   </ol>
+</div>
+
+    <div class="tvm-checkout">
+
+        <div class="checkout-body">
+            <div class="belt flex-order">
+                <div class="checkout-steps">
+
+                    <div class="checkout-step checkout-step-2">
+    <div class="user-personal-data">
+
+        <div class="title-container">
+            <p class="checkout-step-title extra-extra-large"><i>1</i> Tus datos personales</p>
+            <p class="account-link">¿ya tienes una cuenta? <a href="#">Inicia sesión</a></p>
+        </div>
+
+        <form action="" class="checkout-form">
+            
+            <div class="form-inline">
+                <div class="input-group text-unique" data-validate="false" data-save="nombre">
+                    <label class="label" for="nombre">Nombre</label>
+                    <input class="text-input" type="text" id="nombre" name="nombre" required="required">
+                </div><!--
+        
+                --><div class="input-group text-unique" data-validate="false" data-save="apellidos">
+                    <label class="label" for="apellidos">Apellidos</label>
+                    <input class="text-input" type="text" id="apellidos" name="apellidos" required="required">
+                </div>
+            </div>
+            
+            <div class="input-group">
+                <label class="label" for="user-email">Email</label>
+                <input class="text-input" type="email" id="user-email" name="user-email" required="required" placeholder="usuario@mail.com">
+            </div>
+
+            <div class="form-inline">
+                <div class="input-group text-unique" data-validate="false" data-save="telefono">
+                    <label class="label" for="telefono">Teléfono</label>
+                    <input class="text-input" type="text" id="telefono" name="telefono" required="required">
+                </div><!--
+
+                --><div class="input-group text-unique" data-validate="false" data-save="dni">
+                    <label class="label" for="dni">DNI</label>
+                    <input class="text-input" type="text" id="dni" name="dni" required="required">
+                </div>
+            </div>
+        </form>
+    </div>
+
+
+    <div class="user-address-data">
+            
+        <p class="checkout-step-title extra-extra-large"><i>2</i> ¿Dónde te lo enviamos?</p>
+
+        <form action="" class="checkout-form">
+
+            <div class="grid-display">
+                <div class="input-group">
+                    <label class="label" for="user-address">Dirección</label>
+                    <input class="text-input" type="text" id="user-address" name="user-address" required="required">
+                </div>
+            </div>
+            
+            <div class="form-inline">
+                <div class="input-group text-unique" data-validate="false" data-save="user-city">
+                    <label class="label" for="user-city">Ciudad</label>
+                    <input class="text-input" type="text" id="user-city" name="user-city" required="required">
+                </div><!--
+        
+                --><div class="input-group text-unique" data-validate="false" data-save="user-province">
+                    <label class="label" for="user-province">Provincia</label>
+                    <input class="text-input" type="text" id="user-province" name="user-province" required="required">
+                </div>
+            </div>
+        
+        
+
+            <div class="form-inline">
+                <div class="input-group text-unique" data-validate="false" data-save="user-cp">
+                    <label class="label" for="user-cp">Código Postal</label>
+                    <input class="text-input" type="text" id="user-cp" name="user-cp" required="required">
+                </div><!--
+
+                --><div></div>
+            </div>
+        </form>
+    </div>
+
+    <a href="#" class="btn btn-right" data-goto="next" data-continue="true">Siguiente: Pago</a>
+</div>
+    
+                </div>
+                <div class="order-summary">
+  <h3 class="order-summary__title">Resumen del pedido</h3>
+  <div class="order-summary__content">
+    <div class="order-summary__intro">
+      <div class="order-summary__image">
+        <img src="imgs/checkout/bici-referencia.png">
+      </div>
+      <div class="order-summary__product">
+        <p class="order-summary__product-name">Trek Superfly 1000 pro</p>
+        <span class="order-summary__product-year">(2017)</span>
+      </div>
+    </div>
+    <div class="order-summary__price">
+      <span class="order-summary__price-text">Total</span> <span class="order-summary__price-number">1230 €</span>
+    </div>
+    <div class="order-summary__breakdown">
+      <ul>
+        <li class="order-summary__breakdown-item">
+          <span>Tarifa del vendedor</span> <span>1060 €</span>
+        </li>
+        <li class="order-summary__breakdown-item">
+          <span>Envío a domicilio</span> <span>50 €</span>
+        </li>
+        <li class="order-summary__breakdown-item">
+          <span>Embalaje de seguridad</span> <span>23 €</span>
+        </li>
+        <li class="order-summary__breakdown-item">
+          <span>Certificado Tuvalum</span> <span>60 €</span>
+        </li>
+      </ul>
+    </div>
+    <div class="order-summary__discount">
+      <a href="#" class="order-summary__discount-link">Tienes algún código de descuento?</a>
+      <form>
+        <label class="label">Introduce aquí tu código</label>
+        <input class="text-input" type="text">
+        <a href="#" class="btn btn-small">Aplicar</a>
+      </form>
+    </div>
+    <div class="order-summary__secure-payment">
+      <p><span>Tu pago es seguro al 100% con nosotros.</span></p>
+    </div>
+  </div>
+</div>
+            </div>
+        </div>
+        <div class="checkout-foot">
+  <div class="foot__bar contact-bar">
+    <div class="belt">
+      <p>¿Necesitas ayuda?: <span>Llámanos al <a href="tel:961305939">961 30 59 39</a> <span>(De Lunes a Viernes de 10h a 20h)</span></span> <span>Escríbenos: <a href="mailto:hola@tuvalum.com">hola@tuvalum.com</a href="mailto:someone@example.com"></span> </p>
+    </div>
+  </div>
+  <div class="foot__bar security-bar">
+    <div class="belt">
+      <ul>
+        <li><img src="imgs/checkout/pagos-seguros.png"></li>
+        <li><img src="imgs/checkout/paypal.png"></li>
+        <li><img src="imgs/checkout/sabadell.png"></li>
+        <li><img src="imgs/checkout/verified-by-visa.png"></li>
+        <li><img src="imgs/checkout/mastercard-securecode.png"></li>
+        <li><img src="imgs/checkout/aplazame.png"></li>
+        <li><img src="imgs/checkout/redsys.png"></li>
+      </ul>
+    </div>
+  </div>
+</div>
+    </div>
+    	    
+    <script src="script/vendor.js"></script>
+
+    
+
+    <script src="script/main.js"></script>
+
+  </body>
+</html>

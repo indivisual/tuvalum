@@ -1,0 +1,631 @@
+<!doctype html>
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8">
+    <title>Tuvalum</title>
+    <meta name="description" content="">
+    
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2, user-scalable=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <!-- <link rel="shortcut icon" href="favicon.ico"> 
+    <link rel="apple-touch-icon" href="apple-touch-icon.png"> -->
+
+
+
+    <link rel="stylesheet" href="styles/main.css">
+      
+    <script src="script/vendor/modernizr.js"></script>
+    
+    
+  </head>
+  <body>
+
+	<div class="tvm-create-ad">
+		<div class="belt">
+			<section>
+  <div class="home-section">
+    <div class="mobile-container">
+      <p class="title">Vende tu bicicleta sin moverte de casa</p>
+      <p class="large">Te ofrecemos la experiencia más fácil y segura para vender tu bicicleta en internet</p>
+     
+      <ul class="step-process">
+
+        <li class="step-process__slide">
+          <img src="imgs/home/IMG-explicacion-1.svg" alt="" class="step-process__image">
+          <div class="step-process__content">
+            <p class="subtitle">Publica GRATIS tu anuncio</p>
+            <p class="medium">Crea tu anuncio en 2 minutos. Sigue nuestros consejos y véndelo en 15 días o menos.</p>
+          </div>
+        </li>
+
+        <li class="step-process__slide">
+          <img src="imgs/home/IMG-explicacion-2.svg" alt="" class="step-process__image">
+          <div class="step-process__content">
+            <p class="subtitle">Recogemos tu bicicleta</p>
+            <p class="medium">Inspeccionamos, ponemos a punto y certificamos tu bicicleta. Podemos hacer las reparaciones necesarias.</p>
+          </div>
+        </li>
+
+        <li class="step-process__slide">
+          <img src="imgs/home/IMG-explicacion-3.svg" alt="" class="step-process__image">
+          <div class="step-process__content">
+            <p class="subtitle">Recibes el dinero de forma segura</p>
+            <p class="medium">Nos encargamos de gestionar el cobro al comprador y te aseguramos el pago por transferencia bancaria.</p>
+          </div>
+        </li>
+
+      </ul>
+    </div>
+    <a href="#" data-goto='next' class="btn btn-large btn-max-long btn-footer">Sube tu anuncio</a>
+  
+  </div>
+</section>
+		</div>
+		<section>
+  <div class="register-section">
+    <div class="register-container">
+      <div class="register-belt">
+        <img src="imgs/logo-tvm.png" alt="Tuvalum">
+        <p class="title">Bienvenido a Tuvalum</p>
+        <p class="large">Crea tu cuenta en unos instantes y accede al mejor mercado de bicicletas de la red.</p>
+       
+        <ul class="tabs">
+          <li class="btn btn-tab active"><a href="#">Soy un particular</a></li>
+          <li class="btn btn-tab"><a href="#">Soy una tienda</a></li>
+        </ul>
+
+        <div id="particular-tab" class="content-tab">
+          <a href="#" class="btn btn-facebook">Registrarme con facebook</a>
+          <a href="#" class="btn btn-secondary btn-strava">Registrarme con Strava</a>
+          <p class="large line-through"><span>o con tu email</span></p>
+          
+          <form id="register-form">
+            <div class="form-group">
+              <label class="label" for="register-email">Email</label>
+              <input class="text-input" type="email" id="register-email" name="register-email" required="required" placeholder="usuario@mail.com">
+            </div>
+            <div class="form-group">
+              <label class="label" for="register-password">Contraseña</label>
+              <input class="text-input" type="password" id="register-password" name="register-password" required="required" placeholder="Escribe tu contraseña">
+            </div>
+            <div class="form-group">
+              <input type="checkbox" name="register-legals" id="register-legals">
+              <label class="medium" for="register-legals">Acepto los <a href="#">Términos y Condiciones</a></label>
+            </div>
+            <a href="#" class="btn btn-large btn-nomargin" data-action="submit" data-goto="next">Crear mi cuenta</a>
+          </form>
+        </div>
+
+        <div class="register-already"><span class="subtitle">¿ya tienes una cuenta?</span> <a href="#">Inicia sesión</a></div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+		<form action="">
+
+			<section>
+  <div class="type-section">
+    <div class="type-container">
+      <div class="type-belt">
+        <div class="bisel">
+          <p class="title">¿Qué tipo de bici quieres vender?</p>
+          <p class="medium">Crea tu anuncio en tres sencillos pasos y vende tu bicicleta en cuestión de horas.</p>
+         
+          <ul class="choose choose-unique" data-validate="false" data-save="tipo">
+            <li value="Mountain Bike" class="btn btn-multiple btn-full" data-showbike="mountain">Mountain bike</li>
+            <li value="Carretera" class="btn btn-multiple btn-full" data-showbike="carretera">Carretera</li>
+            <li value="Ciudad" class="btn btn-multiple btn-full" data-showbike="ciudad">Ciudad</li>
+            <li value="Triatlon" class="btn btn-multiple btn-full" data-showbike="triatlon">Triatlon</li>
+          </ul>
+            
+        </div>
+
+        <a href="#" class="btn btn-large btn-max-long btn-disabled" data-goto="next" data-continue="true">Continuar</a>
+
+      </div>
+    </div>
+    <div class="bike-image">
+      <div class="bike-type mountain-type">
+        <img class="circle-img" src="imgs/circle-purple.svg" alt="circle-blue">
+        <img class="bike-img" src="imgs/bici-montana-ejemplo.png" alt="">
+      </div>
+      <div class="bike-type carretera-type">
+        <img class="circle-img" src="imgs/circle-green.svg" alt="circle-blue">
+        <img class="bike-img" src="imgs/bici-carretera-ejemplo.png" alt="">
+      </div>
+      <div class="bike-type ciudad-type">
+        <img class="circle-img" src="imgs/circle-blue.svg" alt="circle-blue">
+        <img class="bike-img" src="imgs/bici-ciudad-ejemplo.png" alt="">
+      </div>
+      <div class="bike-type triatlon-type">
+        <img class="circle-img" src="imgs/circle-purple.svg" alt="circle-blue">
+        <img class="bike-img" src="imgs/bici-triatlon-ejemplo.png" alt="">
+      </div>
+    </div>
+  </div>
+</section>
+
+			<section>
+  <div class="make-section">
+    <div class="make-container">
+      <div class="make-belt">
+        <p class="headertext" data-bicicle="tipo">Mountain bike</p>
+        <p class="title">Crea tu anuncio</p>
+        <p class="medium">Crea tu anuncio en tres sencillos pasos y vende tu bicicleta en cuestión de horas.</p>
+       
+        <ul class="steps">
+          <li class="step" data-step="1" data-goto="next">
+            <p class="title-mini sub">Paso 1</p>
+            <p class="subtitle">Información básica</p>
+            <div class="progressbar" data-bar="1"><span></span></div>
+            <p class="medium">Tipo de bici, modelo, clase, etc.</p>
+          </li>
+
+          <li class="step disabled" data-step="2" data-goto="7">
+            <p class="title-mini sub">Paso 2</p>
+            <p class="subtitle">Fotos y descripción</p>
+            <div class="progressbar" data-bar="2"><span></span></div>
+            <p class="medium">Fotos de componentes y detalles</p>
+          </li>
+
+          <li class="step disabled">
+            <p class="title-mini sub">Paso 3</p>
+            <p class="subtitle">Datos del anuncio</p>
+            <div class="progressbar" data-bar="3"><span></span></div>
+            <p class="medium">Precio y servicios adicionales</p>
+          </li>
+        </ul>
+        
+
+      </div>
+    </div>
+  </div>
+</section>
+			
+			<section>
+  <div class="kind-section">
+
+    <div class="progress-bar">
+      <div class="info-container">
+        <div class="arrow-back"><a href="#"><img src="imgs/go-back-arrow.png" alt="Volver al paso anterior"></a></div>
+        <p class="progress-bar_title">Paso 1: Información básica</p>
+      </div>
+      <div class="progress-bar_bar" data-bar="1"><span></span></div>
+    </div>
+
+    <div class="kind-container">
+      <div class="kind-belt">
+        
+        <p class="title extra-extra-large center-text">¿Qué bicicleta tienes?</p>
+        <p class="medium center-text">Queremos que recibas el dinero que te mereces por tu bicileta. De venderla, ya nos encargamos nosotros :)</p>
+
+        <div class="bisel"> 
+          <div class="select-group">
+             <p class="select-title">Marca</p>
+
+             <select name="marca" id="marca" class="select" data-save="marca">
+               <option value="Focus">Focus</option>
+               <option value="Orbea">Orbea</option>
+               <option value="Trek">Trek</option>
+               <option value="Cannondale">Cannondale</option>
+             </select>
+
+           </div>
+
+           <div class="select-group">
+             <p class="select-title">Modelo</p>
+
+             <select name="modelo" id="modelo" class="select" data-save="modelo">
+              <option value="eg">eg. Antigua y Barbuda</option>
+             </select>
+
+           </div>
+
+           <div class="select-group">
+             <p class="select-title">Año de modelo</p>
+
+             <select name="fecha" id="fecha" class="select" data-save="fecha">
+              <option value="eg">eg. Antigua y Barbuda</option>
+             </select>
+
+           </div>
+
+           <div class="select-group">
+             <p class="select-title">Talla</p>
+
+             <select name="talla" id="talla" class="select" data-save="talla">
+              <option value="">selecciona</option>
+              <option value="XS">XS</option>
+              <option value="S">S</option>
+              <option value="M">M</option>
+              <option value="ML">ML</option>
+              <option value="L">L</option>
+              <option value="XL">XL</option>
+              <option value="46">46</option>
+              <option value="47">47</option>
+              <option value="48">48</option>
+              <option value="49">49</option>
+              <option value="50">50</option>
+              <option value="51">51</option>
+              <option value="52">52</option>
+              <option value="53">53</option>
+              <option value="54">54</option>
+              <option value="55">55</option>
+              <option value="56">56</option>
+              <option value="57">57</option>
+              <option value="58">58</option>
+              <option value="59">59</option>
+              <option value="60">60</option>
+              <option value="61">61</option>
+              <option value="62+">+62</option>
+             </select>
+
+           </div>
+
+        </div>
+
+      </div>
+
+      <div class="btn-group">
+        <a href="#" class="btn btn-medium btn-secondary btn-nomargin" data-goto="prev">Atrás</a>
+        <a href="#" class="btn btn-medium btn-right btn-nomargin" data-goto="next" data-progress="33" data-progressbar="1">Continuar</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+			<section>
+  <div class="more-section">
+
+    <div class="progress-bar">
+      <div class="info-container">
+        <div class="arrow-back"><a href="#"><img src="imgs/go-back-arrow.png" alt="Volver al paso anterior"></a></div>
+        <p class="progress-bar_title">Paso 1: Información básica</p>
+      </div>
+      <div class="progress-bar_bar" data-bar="1"><span></span></div>
+    </div>
+
+    <div class="more-container">
+      <div class="more-belt">
+        
+        <p class="title extra-extra-large center-text">Cuéntanos más sobre tu bici</p>
+        <p class="medium center-text">Cuanto más específico seas, más facil será para los compradores confiar en tu bibicleta y poder decidirse en comprarla.</p>
+
+        <div class="bisel"> 
+
+        <!-- Material -->
+          <div class="input-group">
+            <div class="options-group">
+              <p class="subtitle">¿De qué material es el cuadro?</p>
+              <a href="#" class="info">INFO</a>
+            </div>           
+            <ul class="choose choose-unique choose-mosaic" data-validate="false" data-save="cuadro">
+              <li value="Carbono" class="btn btn-multiple btn-shorter">Carbono</li>
+              <li value="Aluminio" class="btn btn-multiple btn-shorter">Aluminio</li>
+              <li value="Titanio" class="btn btn-multiple btn-shorter">Titanio</li>
+              <li value="Acero" class="btn btn-multiple btn-shorter">Acero</li>
+              <li value="Otro" class="btn btn-multiple btn-shorter">Otro</li>
+            </ul>
+          </div>
+
+          <!-- Cambio trasero -->
+          <div class="input-group select-unique disabled" data-validate="false" data-save="cambio_trasero">
+            <p class="select-title">Cambio trasero</p>
+
+            <select name="cambio_trasero" id="cambio_trasero" class="select">
+              <option value="">Selecciona</option>
+              <option value="1">Opción 1</option>
+              <option value="2">Opción 2</option>
+            </select>
+
+          </div>
+
+          <!-- Cassette -->
+          <div class="input-group select-unique disabled" data-validate="false" data-save="cassette">
+            <p class="select-title">Tipo de cassette</p>
+
+            <select name="cassette" id="cassette" class="select">
+              <option value="">Selecciona</option>
+              <option value="12v">12v</option>
+              <option value="11v">11v</option>
+              <option value="10v">10v</option>
+              <option value="9v">9v</option>
+              <option value="2-8v">2-8v</option>
+              <option value="Fixed">Fixed</option>
+            </select>
+          </div>
+
+          <!-- Platos -->
+          <div class="input-group select-unique disabled" data-validate="false" data-save="platos">
+            <p class="select-title">Platos</p>
+
+            <select name="platos" id="platos" class="select">
+              <option value="">Selecciona</option>
+              <option value="3">3 platos</option>
+              <option value="2">2 platos</option>
+              <option value="1">Monoplato</option>
+            </select>
+          </div>
+
+          <!-- Ruedas -->
+          <div class="input-group text-unique disabled" data-validate="false" data-save="ruedas">
+            <label class="label" for="ruedas">Ruedas</label>
+            <input class="text-input" type="text" id="ruedas" name="ruedas" required="required" placeholder="Mavic Cosmic">
+          </div>
+
+          <!-- Pedales -->
+          <div class="input-group disabled">
+            <div class="options-group">
+              <p class="subtitle">¿Incluye los pedales?</p>
+            </div>           
+            <ul class="choose choose-unique choose-mosaic" data-validate="false" data-save="pedales">
+              <li value="Si" class="btn btn-multiple btn-shorter">Si</li>
+              <li value="No" class="btn btn-multiple btn-shorter">No</li>
+            </ul>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="btn-group">
+        <a href="#" class="btn btn-medium btn-secondary btn-nomargin" data-goto="prev">Atrás</a>
+        <a href="#" class="btn btn-medium btn-right btn-nomargin btn-disabled" data-goto="next" data-continue="true" data-progress="33" data-progressbar="1">Continuar</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+			
+			<section>
+  <div class="extras-section">
+
+    <div class="progress-bar">
+      <div class="info-container">
+        <div class="arrow-back"><a href="#"><img src="imgs/go-back-arrow.png" alt="Volver al paso anterior"></a></div>
+        <p class="progress-bar_title">Paso 1: Información básica</p>
+      </div>
+      <div class="progress-bar_bar" data-bar="1"><span></span></div>
+    </div>
+
+    <div class="extras-container">
+      <div class="extras-belt">
+        
+        <p class="title extra-extra-large center-text">¿Tu bicicleta incluye algún extra?</p>
+        <p class="medium center-text">Cuanto más específico seas, más facil será para los compradores confiar en tu bibicleta y poder decidirse en comprarla.</p>
+
+        <div class="input-group">   
+          <ul class="choose choose-unique choose-mosaic choose-centered" data-validate="false" data-save="extras">
+            <li value="true" class="btn btn-multiple btn-shorter">Si</li>
+            <li value="false" class="btn btn-multiple btn-shorter">No</li>
+          </ul>
+        </div>
+
+
+        <div class="bisel"> 
+
+        <!-- Material -->
+          <div class="input-group disabled">
+            
+            <p class="medium center-text">Selecciona el tipo o tipos que tenga tu bicicleta:</p>
+                    
+            <ul class="choose choose-multiple choose-mosaic choose-ico" data-validate="false" data-save="extras">
+              <li value="Manillar de carbono" class="btn btn-multiple btn-shorter ico-manillar">Manillar de carbono</li>
+              <li value="Tija de carbono" class="btn btn-multiple btn-shorter ico-tija">Tija de carbono</li>
+              <li value="Tija telescópica" class="btn btn-multiple btn-shorter ico-tija">Tija telescópica</li>
+              <li value="Ruedas tubeless" class="btn btn-multiple btn-shorter ico-ruedas">Ruedas tubeless</li>
+              <li value="Bielas de carbono" class="btn btn-multiple btn-shorter ico-bielas">Bielas de carbono</li>
+              <li value="Platos ovalados" class="btn btn-multiple btn-shorter ico-platos">Platos ovalados</li>
+              <li value="Ruedas de carbono" class="btn btn-multiple btn-shorter ico-ruedas">Ruedas de carbono</li>
+              <li value="Mandos de cambio tipo" class="btn btn-multiple btn-shorter ico-manillar">Mandos de cambio tipo</li>
+              <li value="Frenos de 4 pistones" class="btn btn-multiple btn-shorter ico-bielas">Frenos de 4 pistones</li>
+              <li value="Potencia de carbono" class="btn btn-multiple btn-shorter ico-bielas">Potencia de carbono</li>
+              <li value="Cableado interno" class="btn btn-multiple btn-shorter ico-manillar">Cableado interno</li>
+            </ul>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="btn-group">
+        <a href="#" class="btn btn-medium btn-secondary btn-nomargin" data-goto="prev">Atrás</a>
+        <a href="#" class="btn btn-medium btn-right btn-nomargin btn-disabled" data-goto="3" data-continue="true" data-progress="34" data-progressbar="1">Continuar</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+			
+			<section>
+  <div class="photos-section">
+
+
+    <!-- Copy of _progress-bar. Do the modifications there -->
+    <div class="progress-bar">
+      <div class="info-container">
+        <div class="arrow-back"><a href="#"><img src="imgs/go-back-arrow.png" alt="Volver al paso anterior"></a></div>
+        <p class="progress-bar_title">Paso 2: Fotos y descripción</p>
+      </div>
+      <div class="progress-bar_bar" data-bar="2"><span></span></div>
+    </div>
+
+
+    <div class="photos-container">
+
+      <div class="title-and-ad">
+        <p class="title extra-extra-large">Añade las fotos de tu bici</p>
+
+        <!-- Copy of _ad. Do the modifications there -->
+        <div class="ad ad--blue">
+          <p class="ad_title">Las buenas fotos venden el doble de rápido. <span class="bold only-mobile">Descúbrelo.</span></p>
+          <p class="ad_text only-desktop">Mira nuestra guía de fotografía y descubre cómo destacar tu bicicleta frente al resto.</p>
+        </div>
+
+      </div>
+
+      <div class="photos-belt">
+        
+      <!-- Copy of _component-state. Do the modifications there -->
+        <div class="state">
+          <p class="state_title">Estado de tu anuncio: <span>Bueno</span></p>
+          <p class="state_text">Podrías subir tu anuncio y conseguir visitas, pero necesitas más información para que pueda ser TOP</p>
+          <p class="state_status"><span>3</span> de 6 fotos subidas</p>
+          <div class="state_progressbar"><span></span></div>         
+        </div>
+        
+        <div class="input-group photo-group">
+          
+          <p class="group-title">Foto principal (obligatoria)</p>      
+          <p class="medium">Esta es la foto que aparecerá en el listado de anuncios</p>
+          <a href="#" class="photo-input" data-goto="add-photo">Perfil derecho de la bici</a>
+        </div>
+
+        <div class="input-group photo-group">
+          
+          <p class="group-title">Fotos de apoyo</p>      
+          <p class="medium">Estas fotos muestran el detalle de componentes de la bicicleta y refuerzan la confianza del comprador a la hora de ver tu bici.</p>
+          <div class="photo-input-group">
+            <a href="#" class="photo-input half">Eje de transmisión</a>
+            <a href="#" class="photo-input half">Manetas/Acoples</a>
+            <a href="#" class="photo-input half">Bielas y platos</a>
+            <a href="#" class="photo-input half">Desviador trasero</a>
+            <a href="#" class="photo-input half">Perfil izquierdo</a>
+          </div>
+          
+        </div>
+
+        
+
+      </div>
+
+      <div class="btn-group">
+        <a href="#" class="btn btn-medium btn-secondary btn-nomargin" data-goto="prev">Atrás</a>
+        <a href="#" class="btn btn-medium btn-right btn-nomargin" data-goto="next" data-continue="true">Continuar</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+			
+			<section>
+  <div class="description-section">
+
+    <!-- Copy of _progress-bar. Do the modifications there -->
+    <div class="progress-bar">
+      <div class="info-container">
+        <div class="arrow-back"><a href="#"><img src="imgs/go-back-arrow.png" alt="Volver al paso anterior"></a></div>
+        <p class="progress-bar_title">Paso 2: Fotos y descripción</p>
+      </div>
+      <div class="progress-bar_bar" data-bar="2"><span></span></div>
+    </div>
+
+    <div class="description-container">
+
+
+      <div class="belt">
+        <p class="title">Escribe una descripción</p>
+        <p class="medium">Esta descripción la leeran los posibles compradores, puedes añadir desde las rutas que has hecho al uso que le has dado.</p>
+
+        <textarea name="descripcion" id="descripcion" placeholder="Escribe aquí tu descripción..." class='input-textarea'></textarea>
+      </div>
+
+      <div class="btn-group">
+        <a href="#" class="btn btn-medium btn-secondary btn-nomargin" data-goto="prev">Atrás</a>
+        <a href="#" class="btn btn-medium btn-right btn-nomargin" data-goto="next" data-continue="true">Continuar</a>
+      </div>
+    </div>
+  </div>
+</section>
+			
+			<section>
+  <div class="condition-section">
+
+    <!-- Copy of _progress-bar. Do the modifications there -->
+    <div class="progress-bar">
+      <div class="info-container">
+        <div class="arrow-back"><a href="#"><img src="imgs/go-back-arrow.png" alt="Volver al paso anterior"></a></div>
+        <p class="progress-bar_title">Paso 1: Información básica</p>
+      </div>
+      <div class="progress-bar_bar" data-bar="2"><span></span></div>
+    </div>
+
+    <div class="condition-container">
+
+      <div class="title-and-ad">
+        <p class="title extra-extra-large">¿En qué estado se encuentra tu bici?</p>
+        <p class="medium">Indícanos el estado de los componentes de tu bicicleta para poder hacernos una idea.</p>
+
+        <!-- Copy of _ad. Do the modifications there -->
+        <div class="ad ad--warning">
+          <p class="ad_title">Aviso</p>
+          <p class="ad_text">recuerda que para no cargar con gastos extra, indícanos bien los daños o tu anuncio se podría retirar o tener un coste extra de reparación</p>
+        </div>
+
+      </div>
+        
+
+      <div class="belt">
+        <a href="#" class="photo-input half">Estado mecánico de los principales componentes</a>
+        <a href="#" class="photo-input half">Estado mecánico del resto de componentes</a>
+        <a href="#" class="photo-input half">Estado estético</a>
+        <a href="#" class="photo-input half">Puesta a punto</a>
+      </div>
+
+      <div class="btn-group">
+        <a href="#" class="btn btn-medium btn-secondary btn-nomargin" data-goto="prev">Atrás</a>
+        <a href="#" class="btn btn-medium btn-right btn-nomargin">Continuar</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+			<section>
+  <div class="add-photo-section">
+
+    <div class="add-photo-container">
+
+      <div class="belt">
+        <p class="title">Foto principal</p>
+        <p class="medium">Esta es la foto que aparecerá en el listado de anuncios, saca tu foto desde el perfil derecho y con un fondo claro como la que te damos de referencia:</p>
+
+        <div class="eqWrap">
+          <div class="img-container eqH"></div>
+          
+          <div class="file-container eqH" data-validate="false">
+            <input type="file" class="input-file" id="principal" name="principal" data-image="show">
+            <label for="principal">Subir foto</label>
+            <div data-show="image" class="image-result">
+              <label for="principal" class="image-result_change"><img src="imgs/change-image.png" alt="Cambiar foto"></label>
+              <div class="image-result_delete" data-delete="image"><img src="imgs/delete-image.png" alt="Borrar foto"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="btn-group">
+        <a href="#" class="btn btn-medium btn-secondary btn-nomargin" data-goto="photos">Atrás</a>
+        <a href="#" class="btn btn-medium btn-right btn-nomargin btn-disabled" data-goto="photos" data-continue="false">Continuar</a>
+      </div>
+    </div>
+  </div>
+</section>
+			
+
+		</form>
+	</div>
+	
+
+
+	    
+    <script src="script/vendor.js"></script>
+
+    
+
+    <script src="script/main.js"></script>
+
+  </body>
+</html>

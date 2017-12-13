@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>icn-phone@2x</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="ICN/phone/gray">
+            <g id="ICN/chart" transform="translate(16.000000, 16.000000) scale(-1, 1) translate(-16.000000, -16.000000) ">
+                <rect id="Rectangle-8" x="0" y="0" width="32" height="32"></rect>
+                <path d="M17.7657439,17.7665118 C15.4899874,20.0408306 12.8533877,22.2173911 11.8111114,21.1751148 C10.3202968,19.6843002 9.40021838,18.3846894 6.11093804,21.0284773 C2.82309531,23.6708275 5.3489981,25.4333527 6.79380874,26.8767257 C8.46145087,28.5443679 14.6777307,26.9658583 20.8221294,20.8228973 C26.9650904,14.6784986 28.5392871,8.46221875 26.8702074,6.79457661 C25.4253967,5.34832835 23.6714972,2.82386319 21.029147,6.11170591 C18.3853592,9.39954864 19.6835323,10.3196271 21.1772221,11.8118792 C22.2151856,12.8541556 20.0400627,15.4907553 17.7657439,17.7665118 Z" id="Shape" fill="#868C99" fill-rule="nonzero"></path>
+            </g>
+        </g>
+    </g>
+</svg>

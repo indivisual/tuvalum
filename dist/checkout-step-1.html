@@ -1,0 +1,208 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <title>Tuvalum</title>
+    <meta name="description" content="">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2, user-scalable=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <!-- <link rel="shortcut icon" href="favicon.ico"> 
+    <link rel="apple-touch-icon" href="apple-touch-icon.png"> -->
+
+
+
+    <link rel="stylesheet" href="styles/main.css">
+      
+    <script src="script/vendor/modernizr.js"></script>
+    
+
+</head>
+
+<body>
+
+    <div class="simple-header-section header-section">
+   <a href="/" class="logo-link"><img src="imgs/logo-tvm.png" alt="Ir a la página principal" class="simple-logo-img"></a>
+</div>
+
+    <!-- Arrow menu example. Class 'activated' to 'li' to activated section. Class checked to 'i' to add check -->  
+<div class="arrow-menu checkout-arrow-menu">
+   <ol>
+       <li><i></i>1. Revisión <span>de pedido</span>
+       <li><i></i>2. Envío
+       <li><i></i>3. Pago
+   </ol>
+</div>
+
+    <div class="tvm-checkout">
+
+        <div class="checkout-body">
+            <div class="belt flex-order">
+                <div class="checkout-steps">
+
+                    <div class="checkout-step checkout-step-1">
+    <div class="checkout-mechanic">
+        <img src="imgs/checkout/checkout-image-example.png" class="checkout-mechanic--image" alt="Un mecánico realizará una puesta a punto de tu producto">
+        <div class="checkout-mechanic-info">
+            <p class="checkout-mechanic--certificate">
+                <i class="check"></i>CERTIFICADO TUVALUM INCLUÍDO</p>
+            <p class="extra-extra-large">Con Tuvalum puedes estar tranquilo</p>
+            <p class="checkout-mechanic--text">Antes de enviarte la bicicleta un mecánico profesional la revisará para comprobar que está como se indica en
+                el anuncio. Y además le hará una puesta a punto del sistema de transmisión y frenado.</p>
+        </div>
+    </div>
+
+    <div class="checkout-finetunning">
+        <div class="checkout-finetunning--info">
+            <p class="subtitle extra-extra-large nmt">Puesta a punto <span class="highlighted">Premium</span></p>
+            <p class="checkout-finetunning--price">40€</p>
+            
+        </div>
+        <div class="checkout-finetunning--cta">
+                <p class="checkout-finetunning--text">Sabemos que no te conformas con lo básico, por eso te ofrecemos una puesta a punto más completa para dejar tu bicicleta mejor que como la has comprado. <a href="#" onclick="Tvm.Overlay.setOverlay($('.tvm-checkout'), 'overlay-checkout', Tvm.Checkout.setupCheckoutTabs)">¿Qué incluye?</a></p>
+            <a href="#" class="btn" onclick="Tvm.Overlay.setOverlay($('.tvm-checkout'), 'overlay-checkout', Tvm.Checkout.setupCheckoutTabs)">Añadir</a>
+        </div>
+    </div>
+
+    <a href="#" class="btn btn-right">Siguiente: Envío</a>
+</div>
+
+
+<!-- to show this html is neccesary to call function **Tvm.Overlay.setOverlay();** -->
+
+<!-- html overlay -->
+<div id="overlay-checkout" class="overlay-wrapper">
+		<div class="overlay-content">
+			<div class="overlay-checkout tabs">
+				<p class="overlay__title">Pasa al nivel superior con la puesta a punto Premium</p>
+				<ul class="tabs__list">
+					<li class="tab btn btn-tab" data-js-target="0">
+						<a href="#">Básica</a>
+					</li>
+					<li class="tab btn btn-tab" data-js-target="1">
+						<a href="#">Premium</a>
+					</li>
+				</ul>
+				<div class="overlay__tables tabs__container">
+					<div class="overlay__table tab-content">
+						<div class="overlay-table__head">
+							<p class="overlay-table__row">Básica</p>
+						</div>
+						<div class="overlay-table__body">
+							<p class="overlay-table__row">Ajuste de cambios</p>
+							<p class="overlay-table__row">Ajuste de frenos</p>
+						</div>
+						<div class="overlay-table__foot">
+							<p class="overlay-table__row">Incluida</p>
+						</div>
+					</div>
+					<div class="overlay__table tab-content">
+							<div class="overlay-table__head">
+								<p class="overlay-table__row">Premium</p>
+							</div>
+							<div class="overlay-table__body">
+								<p class="overlay-table__row">Ajuste de cambios</p>
+								<p class="overlay-table__row">Ajuste de frenos</p>
+								<p class="overlay-table__row">Limpieza y engrase del sistema de transmisión</p>
+								<p class="overlay-table__row">Lubricación del cableado</p>
+								<p class="overlay-table__row">Ajuste de dirección</p>
+								<p class="overlay-table__row">Limpieza y engrase del sistema de Dirección</p>
+								<p class="overlay-table__row">Ajuste y engrase de suspensiones MTB 1</p>
+								<p class="overlay-table__row">Centrado y equilibrado de ruedas</p>
+								<p class="overlay-table__row">Apriete de tornillería general</p>
+								<p class="overlay-table__row">Limpieza total</p>
+							</div>
+							<div class="overlay-table__foot">
+								<p class="overlay-table__row">50 €</p>
+							</div>
+						</div>
+				</div>
+		
+				<span class="overlay__text">1. El ajuste y engrase de suspensión se refiere exclusivamente a los rodamientos de los basculares. No incluye mantenimiento de la suspensión ni se abre en profundida la suspensión.</span>
+				<span class="overlay__text">*El precio de cualquier material a sustituir no está incluído</span>
+	
+				<a href="#" class="btn btn-large btn-max-long">Contratar revisión Premium</a>
+			</div>
+
+			<a href="#" class="overlay-close">Close</a>
+		</div>
+</div>
+    
+                </div>
+                <div class="order-summary">
+  <h3 class="order-summary__title">Resumen del pedido</h3>
+  <div class="order-summary__content">
+    <div class="order-summary__intro">
+      <div class="order-summary__image">
+        <img src="imgs/checkout/bici-referencia.png">
+      </div>
+      <div class="order-summary__product">
+        <p class="order-summary__product-name">Trek Superfly 1000 pro</p>
+        <span class="order-summary__product-year">(2017)</span>
+      </div>
+    </div>
+    <div class="order-summary__price">
+      <span class="order-summary__price-text">Total</span> <span class="order-summary__price-number">1230 €</span>
+    </div>
+    <div class="order-summary__breakdown">
+      <ul>
+        <li class="order-summary__breakdown-item">
+          <span>Tarifa del vendedor</span> <span>1060 €</span>
+        </li>
+        <li class="order-summary__breakdown-item">
+          <span>Envío a domicilio</span> <span>50 €</span>
+        </li>
+        <li class="order-summary__breakdown-item">
+          <span>Embalaje de seguridad</span> <span>23 €</span>
+        </li>
+        <li class="order-summary__breakdown-item">
+          <span>Certificado Tuvalum</span> <span>60 €</span>
+        </li>
+      </ul>
+    </div>
+    <div class="order-summary__discount">
+      <a href="#" class="order-summary__discount-link">Tienes algún código de descuento?</a>
+      <form>
+        <label class="label">Introduce aquí tu código</label>
+        <input class="text-input" type="text">
+        <a href="#" class="btn btn-small">Aplicar</a>
+      </form>
+    </div>
+    <div class="order-summary__secure-payment">
+      <p><span>Tu pago es seguro al 100% con nosotros.</span></p>
+    </div>
+  </div>
+</div>
+            </div>
+        </div>
+        <div class="checkout-foot">
+  <div class="foot__bar contact-bar">
+    <div class="belt">
+      <p>¿Necesitas ayuda?: <span>Llámanos al <a href="tel:961305939">961 30 59 39</a> <span>(De Lunes a Viernes de 10h a 20h)</span></span> <span>Escríbenos: <a href="mailto:hola@tuvalum.com">hola@tuvalum.com</a href="mailto:someone@example.com"></span> </p>
+    </div>
+  </div>
+  <div class="foot__bar security-bar">
+    <div class="belt">
+      <ul>
+        <li><img src="imgs/checkout/pagos-seguros.png"></li>
+        <li><img src="imgs/checkout/paypal.png"></li>
+        <li><img src="imgs/checkout/sabadell.png"></li>
+        <li><img src="imgs/checkout/verified-by-visa.png"></li>
+        <li><img src="imgs/checkout/mastercard-securecode.png"></li>
+        <li><img src="imgs/checkout/aplazame.png"></li>
+        <li><img src="imgs/checkout/redsys.png"></li>
+      </ul>
+    </div>
+  </div>
+</div>
+    </div>
+    	    
+    <script src="script/vendor.js"></script>
+
+    
+
+    <script src="script/main.js"></script>
+
+  </body>
+</html>

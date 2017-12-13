@@ -1,0 +1,42 @@
+[
+	{
+		"user_id": 23423,
+		"tipo": "Mountain bike",
+		"modelo": "Alma M25",
+		"marca": "Orbea",
+		"fecha": "2012",
+		"talla": "M",
+		"cuadro": "aluminio",
+		"suspension": "ns",
+		"recorrido_susp_delantera": "120 - 140 mm",
+		"recorrido_susp_trasera": "120 - 140 mm",
+		"grupo_cambio": "",
+		"pais": "España",
+		"velocidades": "3 - 9",
+		"platos": "3",
+		"medida_ruedas": "flatbike",
+		"extras": [
+			"Tija telescopica",
+			"Cableado interno",
+			"Ruedas de carbono"
+		],
+		"fotos": {
+			"principal": "http://fotos.tuvalum.com/user/1231312313131231/perfil_derecho.jpg",
+			"transmision": "http://fotos.tuvalum.com/user/1231312313131231/transmision.jpg",
+			"manetas": "http://fotos.tuvalum.com/user/1231312313131231/manetas.jpg",
+			"platos": "http://fotos.tuvalum.com/user/1231312313131231/platos.jpg",
+			"desviador": "http://fotos.tuvalum.com/user/1231312313131231/desviador.jpg",
+			"perfil_izquierdo": "http://fotos.tuvalum.com/user/1231312313131231/prfil_izquierdo.jpg"
+		},
+		"descripcion": "Es una bici muy buena y solo la he usado dos veces.",
+		"estado": {
+			"estado_mecanico_ppal": {
+				"consumibles_transmision":"poco uso",
+				"...":""
+			}
+
+		},
+		"coste_inicial":2350,
+		"precio_esperado":1500
+	}
+]

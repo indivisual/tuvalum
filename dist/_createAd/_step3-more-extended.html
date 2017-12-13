@@ -1,0 +1,205 @@
+<section>
+  <div class="more-section">
+
+    <div class="progress-bar">
+      <div class="info-container">
+        <div class="arrow-back"><a href="#"><img src="imgs/go-back-arrow.png" alt="Volver al paso anterior"></a></div>
+        <p class="progress-bar_title">Paso 1: Información básica</p>
+      </div>
+      <div class="progress-bar_bar" data-bar="1"><span></span></div>
+    </div>
+
+    <div class="more-container">
+      <div class="more-belt">
+        
+        <p class="title extra-extra-large center-text">Cuéntanos más sobre tu bici</p>
+        <p class="medium center-text">Cuanto más específico seas, más facil será para los compradores confiar en tu bibicleta y poder decidirse en comprarla.</p>
+
+        <div class="bisel"> 
+
+        <!-- Material -->
+          <div class="input-group">
+            <div class="options-group">
+              <p class="subtitle">¿De qué material es el cuadro?</p>
+              <a href="#" class="info">INFO</a>
+            </div>           
+            <ul class="choose choose-unique choose-mosaic" data-validate="false" data-save="cuadro">
+              <li value="Carbono" class="btn btn-multiple btn-shorter">Carbono</li>
+              <li value="Aluminio" class="btn btn-multiple btn-shorter">Aluminio</li>
+              <li value="Titanio" class="btn btn-multiple btn-shorter">Titanio</li>
+              <li value="Acero" class="btn btn-multiple btn-shorter">Acero</li>
+              <li value="Otro" class="btn btn-multiple btn-shorter">Otro</li>
+            </ul>
+          </div>
+
+          <!-- Cambio trasero -->
+          <div class="input-group select-unique disabled" data-validate="false" data-save="cambio_trasero">
+            <p class="select-title">Cambio trasero</p>
+
+            <select name="cambio_trasero" id="cambio_trasero" class="select">
+              <option value="">Selecciona</option>
+              <option value="1">Opción 1</option>
+              <option value="2">Opción 2</option>
+            </select>
+
+          </div>
+
+          <!-- Cassette -->
+          <div class="input-group select-unique disabled" data-validate="false" data-save="cassette">
+            <p class="select-title">Tipo de cassette</p>
+
+            <select name="cassette" id="cassette" class="select">
+              <option value="">Selecciona</option>
+              <option value="12v">12v</option>
+              <option value="11v">11v</option>
+              <option value="10v">10v</option>
+              <option value="9v">9v</option>
+              <option value="2-8v">2-8v</option>
+              <option value="Fixed">Fixed</option>
+            </select>
+          </div>
+
+          <!-- Platos -->
+          <div class="input-group select-unique disabled" data-validate="false" data-save="platos">
+            <p class="select-title">Platos</p>
+
+            <select name="platos" id="platos" class="select">
+              <option value="">Selecciona</option>
+              <option value="3">3 platos</option>
+              <option value="2">2 platos</option>
+              <option value="1">Monoplato</option>
+            </select>
+          </div>
+
+          <!-- Ruedas -->
+          <div class="input-group text-unique disabled" data-validate="false" data-save="ruedas">
+            <label class="label" for="ruedas">Ruedas</label>
+            <input class="text-input" type="text" id="ruedas" name="ruedas" required="required" placeholder="Mavic Cosmic">
+          </div>
+
+          <!-- Suspensión -->
+          <div class="input-group disabled">
+            <div class="options-group">
+              <p class="subtitle">¿Incluye los pedales?</p>
+            </div>           
+            <ul class="choose choose-unique choose-mosaic" data-validate="false" data-save="pedales">
+              <li value="Si" class="btn btn-multiple btn-shorter">Si</li>
+              <li value="No" class="btn btn-multiple btn-shorter">No</li>
+            </ul>
+          </div>
+
+          <!-- Suspensión -->
+          <div class="input-group disabled">
+            <div class="options-group">
+              <p class="subtitle">¿Qué suspensión tiene?</p>
+              <a href="#" class="info">INFO</a>
+            </div>           
+            <ul class="choose choose-unique choose-mosaic" data-validate="false" data-save="suspension">
+              <li value="Rígida" class="btn btn-multiple btn-shorter">Rígida</li>
+              <li value="Doble" class="btn btn-multiple btn-shorter">Doble</li>
+              <li value="No lo sé" class="btn btn-multiple btn-shorter">No lo sé</li>
+            </ul>
+          </div>
+
+          <!-- Recorrido susp. delantera -->
+          <div class="input-group disabled">
+            <div class="options-group">
+              <p class="subtitle">¿Cuál es el recorrido de la suspensión delantera?</p>
+              <a href="#" class="info">INFO</a>
+            </div>           
+            <ul class="choose choose-unique choose-mosaic" data-validate="false" data-save="recorrido_susp_delantera">
+              <li value="No tiene" class="btn btn-multiple btn-shorter">No tiene</li>
+              <li value="80 - 100mm" class="btn btn-multiple btn-shorter">80 - 100 mm</li>
+              <li value="100 - 120mm" class="btn btn-multiple btn-shorter">100 - 120 mm</li>
+              <li value="120 - 140mm" class="btn btn-multiple btn-shorter">120 - 140 mm</li>
+              <li value="140 - 180mm" class="btn btn-multiple btn-shorter">140 - 180 mm</li>
+              <li value="No lo sé" class="btn btn-multiple btn-shorter">No lo sé</li>
+            </ul>
+          </div>
+
+          <!-- Recorrido susp. trasera -->
+          <div class="input-group disabled">
+            <div class="options-group">
+              <p class="subtitle">¿Cuál es el recorrido de la suspensión trasera?</p>
+              <a href="#" class="info">INFO</a>
+            </div>           
+            <ul class="choose choose-unique choose-mosaic" data-validate="false" data-save="recorrido_susp_trasera">
+              <li value="No tiene" class="btn btn-multiple btn-shorter">No tiene</li>
+              <li value="80 - 100mm" class="btn btn-multiple btn-shorter">80 - 100 mm</li>
+              <li value="100 - 120mm" class="btn btn-multiple btn-shorter">100 - 120 mm</li>
+              <li value="120 - 140mm" class="btn btn-multiple btn-shorter">120 - 140 mm</li>
+              <li value="140 - 180mm" class="btn btn-multiple btn-shorter">140 - 180 mm</li>
+              <li value="No lo sé" class="btn btn-multiple btn-shorter">No lo sé</li>
+            </ul>
+          </div>
+
+          <!-- Grupo cambio -->
+          <div class="input-group disabled">
+            <div class="options-group">
+              <p class="subtitle">¿Cuál es el grupo principal de cambio?</p>
+              <a href="#" class="info">INFO</a>
+            </div>           
+            
+            <div class="select-group">
+             <p class="select-title">Modelo</p>
+             <select name="grupo_cambio" id="grupo_cambio" class="select" data-save="grupo_cambio">
+              <option value="eg">Selecciona uno</option>
+             </select>
+            </div>
+          </div>
+
+          <!-- Velocidades -->
+          <div class="input-group disabled">
+            <div class="options-group">
+              <p class="subtitle">¿Cuántas velocidades tiene?</p>
+              <a href="#" class="info">INFO</a>
+            </div>           
+            <ul class="choose choose-unique choose-mosaic" data-validate="false" data-save="velocidades">
+              <li value="12" class="btn btn-multiple btn-shorter">12</li>
+              <li value="11" class="btn btn-multiple btn-shorter">11</li>
+              <li value="10" class="btn btn-multiple btn-shorter">10</li>
+              <li value="3 - 9" class="btn btn-multiple btn-shorter">3 - 9</li>
+              <li value="Fixed" class="btn btn-multiple btn-shorter">Fixed</li>
+            </ul>
+          </div>
+
+          <!-- Platos -->
+          <div class="input-group disabled">
+            <div class="options-group">
+              <p class="subtitle">¿Cuántos platos tiene?</p>
+              <a href="#" class="info">INFO</a>
+            </div>           
+            <ul class="choose choose-unique choose-mosaic" data-validate="false" data-save="platos">
+              <li value="3" class="btn btn-multiple btn-shorter">3</li>
+              <li value="2" class="btn btn-multiple btn-shorter">2</li>
+              <li value="Monoplato" class="btn btn-multiple btn-shorter">Monoplato</li>
+            </ul>
+          </div>
+
+          <!-- Ruedas -->
+          <div class="input-group disabled">
+            <div class="options-group">
+              <p class="subtitle">¿De qué medidas son las ruedas?</p>
+              <a href="#" class="info">INFO</a>
+            </div>           
+            <ul class="choose choose-unique choose-mosaic" data-validate="false" data-save="medidas_ruedas">
+              <li value="26" class="btn btn-multiple btn-shorter">26"</li>
+              <li value="27,5" class="btn btn-multiple btn-shorter">27,5"</li>
+              <li value="39" class="btn btn-multiple btn-shorter">39"</li>
+              <li value="Fatbike" class="btn btn-multiple btn-shorter">Fatbike</li>
+              <li value="Otra" class="btn btn-multiple btn-shorter">Otra</li>
+            </ul>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="btn-group">
+        <a href="#" class="btn btn-medium btn-secondary btn-nomargin" data-goto="prev">Atrás</a>
+        <a href="#" class="btn btn-medium btn-right btn-nomargin btn-disabled" data-goto="next" data-continue="true">Continuar</a>
+      </div>
+
+    </div>
+  </div>
+</section>

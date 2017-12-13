@@ -1,0 +1,102 @@
+<section>
+  <div class="more-section">
+
+    <div class="progress-bar">
+      <div class="info-container">
+        <div class="arrow-back"><a href="#"><img src="imgs/go-back-arrow.png" alt="Volver al paso anterior"></a></div>
+        <p class="progress-bar_title">Paso 1: Información básica</p>
+      </div>
+      <div class="progress-bar_bar" data-bar="1"><span></span></div>
+    </div>
+
+    <div class="more-container">
+      <div class="more-belt">
+        
+        <p class="title extra-extra-large center-text">Cuéntanos más sobre tu bici</p>
+        <p class="medium center-text">Cuanto más específico seas, más facil será para los compradores confiar en tu bibicleta y poder decidirse en comprarla.</p>
+
+        <div class="bisel"> 
+
+        <!-- Material -->
+          <div class="input-group">
+            <div class="options-group">
+              <p class="subtitle">¿De qué material es el cuadro?</p>
+              <a href="#" class="info">INFO</a>
+            </div>           
+            <ul class="choose choose-unique choose-mosaic" data-validate="false" data-save="cuadro">
+              <li value="Carbono" class="btn btn-multiple btn-shorter">Carbono</li>
+              <li value="Aluminio" class="btn btn-multiple btn-shorter">Aluminio</li>
+              <li value="Titanio" class="btn btn-multiple btn-shorter">Titanio</li>
+              <li value="Acero" class="btn btn-multiple btn-shorter">Acero</li>
+              <li value="Otro" class="btn btn-multiple btn-shorter">Otro</li>
+            </ul>
+          </div>
+
+          <!-- Cambio trasero -->
+          <div class="input-group select-unique disabled" data-validate="false" data-save="cambio_trasero">
+            <p class="select-title">Cambio trasero</p>
+
+            <select name="cambio_trasero" id="cambio_trasero" class="select">
+              <option value="">Selecciona</option>
+              <option value="1">Opción 1</option>
+              <option value="2">Opción 2</option>
+            </select>
+
+          </div>
+
+          <!-- Cassette -->
+          <div class="input-group select-unique disabled" data-validate="false" data-save="cassette">
+            <p class="select-title">Tipo de cassette</p>
+
+            <select name="cassette" id="cassette" class="select">
+              <option value="">Selecciona</option>
+              <option value="12v">12v</option>
+              <option value="11v">11v</option>
+              <option value="10v">10v</option>
+              <option value="9v">9v</option>
+              <option value="2-8v">2-8v</option>
+              <option value="Fixed">Fixed</option>
+            </select>
+          </div>
+
+          <!-- Platos -->
+          <div class="input-group select-unique disabled" data-validate="false" data-save="platos">
+            <p class="select-title">Platos</p>
+
+            <select name="platos" id="platos" class="select">
+              <option value="">Selecciona</option>
+              <option value="3">3 platos</option>
+              <option value="2">2 platos</option>
+              <option value="1">Monoplato</option>
+            </select>
+          </div>
+
+          <!-- Ruedas -->
+          <div class="input-group text-unique disabled" data-validate="false" data-save="ruedas">
+            <label class="label" for="ruedas">Ruedas</label>
+            <input class="text-input" type="text" id="ruedas" name="ruedas" required="required" placeholder="Mavic Cosmic">
+          </div>
+
+          <!-- Pedales -->
+          <div class="input-group disabled">
+            <div class="options-group">
+              <p class="subtitle">¿Incluye los pedales?</p>
+            </div>           
+            <ul class="choose choose-unique choose-mosaic" data-validate="false" data-save="pedales">
+              <li value="Si" class="btn btn-multiple btn-shorter">Si</li>
+              <li value="No" class="btn btn-multiple btn-shorter">No</li>
+            </ul>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="btn-group">
+        <a href="#" class="btn btn-medium btn-secondary btn-nomargin" data-goto="prev">Atrás</a>
+        <a href="#" class="btn btn-medium btn-right btn-nomargin btn-disabled" data-goto="next" data-continue="true" data-progress="33" data-progressbar="1">Continuar</a>
+      </div>
+
+    </div>
+  </div>
+</section>
