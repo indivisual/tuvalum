@@ -1,0 +1,25 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <title>Tuvalum</title>
+    <meta name="description" content="">
+
+    <!--#include file="_header.html" -->
+
+</head>
+
+<body>
+
+    <!--#include file="_commons/_simple-header.html" -->
+
+    <div class="tvm-checkout">
+        <div class="belt">
+            <!-- #include file="_checkout/_checkout-confirm-transfer.html" -->
+        </div>
+    </div>
+
+    <!-- #include file="_commons/_need-help-module.html" -->
+
+    <!--#include file="_footer.html" -->

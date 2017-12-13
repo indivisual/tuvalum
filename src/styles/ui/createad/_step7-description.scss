@@ -1,0 +1,42 @@
+.description-section {
+	text-align:left;
+
+	.description-container {
+		max-width: rem(936);
+		width:100%;
+		margin:auto;
+
+		.belt {
+			max-width: rem(500);
+			width:calc(100% - 40px);
+			margin:rem(20);
+		}
+
+		
+	}	
+}
+
+
+
+/* --------------- Media Queries ----------------- */
+
+@media only screen and (max-width: $screen-lg) { }
+
+@media only screen and (max-width: $screen-md) {
+	
+}
+
+@media only screen and (max-width: $screen-sm) { }
+
+@media only screen and (max-width: $screen-xs) {
+	.description-section {
+		
+		.description-container {
+			margin:0;
+
+			.belt {
+				margin:0 rem(10);
+			}
+		}	
+	}
+}

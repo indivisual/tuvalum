@@ -1,0 +1,54 @@
+.any-doubt-module {
+    background: $nieve;
+    padding: rem(20) rem(20) rem(30);
+    margin: rem(30) auto 0;
+
+    .any-doubt--questions {
+        display: flex;
+        flex-wrap: wrap;
+        margin: rem(20) auto;
+        max-width: rem(960);
+    }
+
+    .any-doubt--question {
+        width: 50%;
+        padding: rem(20);
+        text-align: left;
+        line-height: rem(24);
+
+        .question {
+            color: $carbon;
+            font-size: rem(16);
+            font-family: $font-semibold;
+            margin: 0 0 rem(15) 0;
+        }    
+
+        .answer {
+            color: $hierro;
+            font-size: rem(16);
+            font-family: $font-regular;
+        }
+    }
+
+    .any-doubt--text {
+        font-size:rem(18);
+        color:$hierro;
+    }
+
+    .any-doubt--link{
+        color: $carbon;
+    }
+
+}
+
+/* --------------- Media Queries ----------------- */
+
+@media only screen and (max-width: $screen-xs) {
+    .any-doubt-module {
+        padding: rem(20) 0 rem(30);
+
+        .any-doubt--question {
+            width: 100%;
+        }
+    }
+}

@@ -1,0 +1,57 @@
+/* Status of the ad */
+
+.state {
+
+	margin:rem(30) 0 rem(15);
+	border-bottom:1px solid $platino;
+	border-top:1px solid $platino;
+	padding:rem(10) rem(5);
+	line-height: rem(21);
+
+	.state_title {
+		font-family: $font-semibold;
+		font-size: rem(14);
+		color:$carbon;
+	}
+
+	.state_status {
+		@extend .state_title;
+		font-size: rem(12);
+		text-align:right;
+	}
+
+	.state_text {
+		color:$hierro;
+		font-size:rem(12);
+		font-family:$font-regular;
+	}
+
+	.state_progressbar {
+		height: rem(7);
+		@include border-radius(100);
+		background: rgba(216,216,216,0.41);
+		margin-bottom:rem(15);
+		position:relative;
+
+		span {
+			height: rem(7);
+			@include border-radius(100);
+			background: linear-gradient(63.43deg, #377BFF 0%, #4EB9FE 100%);
+			position: absolute;
+			width: 50%;
+			top:0;
+			left:0;
+		}
+	}
+}
+
+
+/* --------------- Media Queries ----------------- */
+@media only screen and (max-width: $screen-xs) {
+	.state {
+		.state_title {
+			font-size: rem(12);
+		}
+
+	}
+}

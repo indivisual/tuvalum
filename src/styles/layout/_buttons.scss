@@ -1,0 +1,186 @@
+/* primary buttons */
+.btn {
+	height: rem(55);
+	width: rem(179);
+	@include border-radius(4);
+	background-color: $blue-primary;
+	color: #FFFFFF;
+	font-family: $font-semibold;
+	font-size: rem(18);
+	line-height: rem(18);
+	text-align: center;
+	display: block;
+	text-decoration:none;
+	margin: rem(10);
+	padding-top: rem(18);
+}
+
+.btn-disabled {
+	background: $hierro;
+	color:$carbon;
+	pointer-events:none;
+}
+
+.btn-medium {
+	height: rem(48);
+	padding-top: rem(15);
+}
+
+.btn-small {
+	height: rem(44);
+	padding-top: rem(13);
+}
+
+
+/* Secondary buttons */
+.btn-secondary {
+	box-sizing: border-box;
+	border: 2px solid $plata;
+	background-color: #FFFFFF;
+	color: $carbon;
+	font-family: $font-regular;
+}
+
+
+/* Tabs */
+.tabs {
+	font-size:0;
+}
+
+.btn-tab {
+	font-size: rem(18);
+	display: inline-block;
+    margin: 0;
+    background: transparent;
+    border-bottom: 1px solid $platino;
+    @include border-radius(0);
+}
+
+.btn-tab a {
+    display: block;
+	text-decoration: none;
+	color: $carbon;
+	font-family: $font-regular;
+    height: 100%;
+    width: 100%;
+    margin: auto;
+}
+
+.btn-tab.active a {
+	border-bottom: 3px solid $blue-primary;
+}
+
+
+/* Multiple selector buttons */
+.btn-multiple {
+	height: rem(78);
+	width: rem(215);
+	@include border-radius(0);
+	background-color: $nieve;
+	color:$carbon;
+	font-size: rem(14);
+	padding: rem(30) rem(7);
+	cursor:pointer;
+
+}
+
+.btn-multiple.selected {
+	background-color: $blue-primary;
+	color:#FFFFFF;
+	font-family: $font-bold;
+}
+
+
+/* buttons length */
+.btn-full {
+	width:100%;
+	margin:rem(5) 0;
+}
+
+.btn-large {
+	width:auto;
+}
+
+.btn-nomargin {
+	margin:0;
+}
+
+.btn-short {
+	width:rem(147);
+}
+
+.btn-shorter {
+	width:rem(130);
+	height:rem(100);
+	padding-top:rem(43);
+	font-family:$font-regular;
+}
+
+.btn-max-long {
+	max-width: rem(410);
+	margin:auto;
+}
+
+.btn-right {
+    margin: auto 0 auto auto;
+}
+
+.btn-facebook {
+	height: rem(44);
+	max-width: rem(360);
+	width:100%;
+	margin:rem(15) 0;
+	font-size:rem(16);
+	font-family:$font-regular;
+	padding-top:rem(14);
+	background: #4D70B3 url(../imgs/ico-fb-bg.png) no-repeat 50px center;
+}
+
+.btn-strava {
+	height: rem(44);
+	max-width: rem(360);
+	width:100%;
+	margin:rem(15) 0;
+	font-size:rem(16);
+	font-family:$font-regular;
+	padding-top:rem(14);
+	background: #FFF url(../imgs/ico-strava-bg.png) no-repeat 50px center;
+}
+
+.btn-group {
+	display: flex; 
+	justify-content: space-between;
+	border-top: 1px solid $platino;
+	padding:rem(20) 0 0;
+	margin:rem(20) 0 0;
+}
+
+/* --------------- Media Queries ----------------- */
+
+@media only screen and (max-width: $screen-lg) { }
+
+@media only screen and (max-width: $screen-md) { }
+
+@media only screen and (max-width: $screen-sm) { }
+
+@media only screen and (max-width: $screen-xs) {
+	.btn-footer {
+		@include border-radius(0);
+	}
+	.btn-max-long {
+		margin: rem(0);
+	}
+	.btn-group {
+		border: 0;
+		.btn {
+			@include border-radius(0);
+		}
+	}
+	.btn-facebook {
+		background: #4D70B3 url(../imgs/ico-fb-bg.png) no-repeat 15px center;
+	}
+
+	.btn-strava {
+		background: #FFF url(../imgs/ico-strava-bg.png) no-repeat 15px center;
+	}
+}

@@ -1,0 +1,111 @@
+.checkout-step-3 {
+    text-align: left;
+    line-height: rem(24);
+
+    .user-payment-method {
+        padding: rem(30);
+
+        .title {
+            margin-top: rem(36);
+        }
+    }
+
+    .address-box {
+        @include border-radius(4);
+        border: 1px solid $platino;
+        text-align: left;
+        padding: rem(17) rem(25);
+        color: $hierro;
+        line-height: rem(24);
+        position: relative;
+
+        .subtitle {
+            color:$carbon;
+        }
+
+        .address-data--change {
+            position: absolute;
+            right: rem(25);
+            top: rem(25);
+
+            a {
+                text-transform: uppercase;
+                color: $hierro;
+                font-size: rem(14);
+                text-decoration: none;
+                font-family: $font-bold;
+            }
+        }
+    }
+
+
+    .payment-methods--warning {
+        padding-left:rem(60);
+        background: url(../imgs/checkout/icon-candado.svg) no-repeat left center;
+        color: $hierro;
+        margin:rem(35) 0;
+    }
+
+    .payment-method {
+        border: 1px solid $platino;
+        @include border-radius(4);
+        margin: rem(14) 0;
+        
+
+        .payment-method--link {
+            padding: rem(12) rem(25);
+            cursor:pointer;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .payment-method--dropdown {
+            display: none;
+            padding: rem(30) rem(25);
+            border-top: 1px solid $platino;
+            color: $hierro;
+        }
+
+        .payment-method--image {
+            margin: rem(8) 0 0 0;
+        }
+    }
+
+
+}
+
+
+
+/* --------------- Media Queries ----------------- */
+
+@media only screen and (max-width: $screen-xs) {
+    .checkout-step-3 {
+
+        .btn {
+            width:100%;
+        }
+
+        .user-payment-method {
+            padding: 0;
+
+            .title {
+                font-size: rem(24);
+                line-height: rem(24);
+            }
+        }
+
+        .address-box {
+            .address-data--change {
+                text-align: right;
+                position: initial;
+            }
+        }
+
+        .payment-methods--warning {
+            padding-left: 0;
+            margin: rem(16) 0;
+            background: none;
+        }
+    }
+}

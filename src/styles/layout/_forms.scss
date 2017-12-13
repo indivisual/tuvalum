@@ -1,0 +1,210 @@
+/* Tuvalum forms */
+
+.label {
+	display:block;
+	font-size:rem(14);
+	text-align:left;
+	color:$carbon;
+	font-family:$font-semibold;
+	margin:rem(10) 0;
+}
+
+.text-input {
+	height: rem(48);
+	max-width: rem(360);
+	width:100%;
+	@include border-radius(2);
+	background-color: #E8EBF0;
+	border:0;
+	padding:rem(10) rem(20);
+	font-size:rem(14);
+	font-family:$font-regular;
+	color: $carbon;
+}
+
+.input-textarea {
+    width: 100%;
+    background: $nieve;
+    border: 0;
+    outline: none;
+    resize: none;
+    margin: rem(20) 0;
+    height: rem(220);
+    padding: rem(20);
+    font-size: rem(14);
+}
+
+.select {
+	-webkit-appearance: none; 
+	-moz-appearance: none;
+	appearance: none;
+	border: none;
+	padding:rem(20) rem(40);
+	background: $nieve url(../imgs/select-down-arrow.png) no-repeat 100% 50%;
+	@include border-radius(2);
+	font-size:rem(14);
+	font-family:$font-regular;
+	color: $hierro;
+	width:100%;
+	background-position-x: calc(100% - 17px);
+}
+
+.select-title {
+	font-family:$font-semibold;
+	font-size:rem(14);
+	color: $carbon;
+	margin:rem(10) 0;
+}
+
+
+.form-group {
+    margin: 30px 0;
+}
+
+.select-group,
+.input-group {
+	margin:rem(10) 0 rem(20);
+
+	&.disabled {
+		opacity: .4;
+		pointer-events: none;
+		-webkit-filter: grayscale(100%);
+		filter: grayscale(100%);
+	}
+}
+
+.form-inline > div {
+	display:inline-block;
+}
+
+.form-inline > div:first-child:nth-last-child(1) {
+	width: 100%;
+}
+
+.form-inline > div:first-child:nth-last-child(2),
+.form-inline > div:first-child:nth-last-child(2) ~ div {
+	width: 50%;
+}
+
+.form-inline > div:first-child:nth-last-child(3),
+.form-inline > div:first-child:nth-last-child(3) ~ div {
+	width: 33.33%;
+}
+
+.choose {
+	margin:rem(40) 0 rem(20);
+}
+
+.choose-mosaic {
+	margin:0;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-align-items: left;
+	align-items: left;
+	-webkit-justify-content: left;
+	justify-content: left;
+	-webkit-flex-flow: row wrap;
+	flex-flow: row wrap;
+	-webkit-align-content: flex-end;
+	align-content: flex-end;
+   
+	.btn-multiple {
+		margin:rem(4);
+	}
+
+	&.choose-centered {
+		-webkit-justify-content: center;
+		justify-content: center;
+	}
+}
+
+.input-file {
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+
+.input-file + label {
+	height:100%;
+	cursor: pointer;
+	display:block;
+	background:$nieve url(../imgs/upload-bg.png) no-repeat center 40%;
+	padding-top:40%;
+	text-align:	center;
+	border:1px dashed $hierro;
+	padding-bottom:10%;
+}
+
+.photo-input {
+	height: rem(56);
+	width:100%;
+	@include border-radius(2);
+	font-size:rem(14);
+	font-family:$font-regular;
+	color: $carbon;
+	cursor: pointer;
+	display:block;
+	padding: rem(20) rem(20);
+	margin:rem(10) 0;
+	background:$nieve url(../imgs/go-forward-arrow-carbon.png) no-repeat 95% center;
+	text-decoration:none;
+}
+
+.photo-input-group {
+	font-size:0%;
+
+	.photo-input {
+		font-size:auto;
+		margin: rem(4) 0;
+		width:49%;
+		display: inline-block;
+		&:nth-child(even) {
+			margin-left:2%; 
+		}
+	}
+}
+
+
+
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: $hierro;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: $hierro;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: $hierro;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: $hierro;
+}
+
+
+
+/* --------------- Media Queries ----------------- */
+
+@media only screen and (max-width: $screen-lg) { }
+
+@media only screen and (max-width: $screen-md) { }
+
+@media only screen and (max-width: $screen-sm) { }
+
+@media only screen and (max-width: $screen-xs) {
+	.btn-max-long {
+		margin: rem(0);
+	}
+	.photo-input-group {
+
+		.photo-input {
+			width: 100%;
+			margin:rem(5) 0;
+			&:nth-child(even) {
+				margin-left:auto; 
+			}
+		}
+	}
+}

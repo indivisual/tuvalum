@@ -1,0 +1,66 @@
+.progress-bar {
+	width:100%;
+	margin:0;
+	color:$carbon;
+	font-size:rem(14);
+	font-family:$font-semibold;
+	text-align:left;
+	position: fixed;
+    top: 0;
+    background: white;
+    z-index: 2;
+
+	.info-container {
+		margin:rem(15) rem(10) rem(10);
+	}
+		
+	.arrow-back {
+		width:rem(30);
+		margin: 0 0 0 rem(10);
+		display: inline-block;
+		vertical-align: middle;
+	}
+
+	.progress-bar_title {
+		display: inline-block;
+		vertical-align: middle;
+	}
+	
+
+	.progress-bar_bar {
+		height: rem(7);
+		@include border-radius(100);
+		background: rgba(216,216,216,0.41);
+		margin:rem(15) 0 0;
+		position:relative;
+
+		span {
+			height: rem(7);
+			@include border-radius(100);
+			background: $progress-bar;
+			position: absolute;
+			width: 66%;
+			top:0;
+			left:0;
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+/* --------------- Media Queries ----------------- */
+
+@media only screen and (max-width: $screen-lg) { }
+
+@media only screen and (max-width: $screen-md) { }
+
+@media only screen and (max-width: $screen-sm) { }
+
+@media only screen and (max-width: $screen-xs) { }

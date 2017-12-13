@@ -1,0 +1,191 @@
+.tvm-checkout {
+
+  @media only screen and (max-width: $screen-xs) { 
+    margin: 0;
+  }
+
+	.belt {
+		max-width: rem(1200);
+		margin: auto;
+  }
+
+  .flex-order {
+    @media only screen and (max-width: $screen-xs) {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+
+  .checkout-body {
+    min-height: calc(100vh - 397px);
+    margin: rem(27) 0 0;
+    @media only screen and (max-width: $screen-xs) { 
+      margin: 0;
+      padding: 0;
+    }
+  }
+  
+  .checkout-steps {
+    display: inline-block;
+    vertical-align: top;
+    width: calc(100% - 360px);
+    padding: rem(15);
+
+    @media only screen and (max-width: $screen-sm) {
+      width: 100%;
+      order: 2;
+    } 
+  }
+
+  .order-summary {
+    display: inline-block;
+    vertical-align: top;
+    width: 100%;
+    max-width: rem(353);
+    padding: rem(15);
+    @media only screen and (max-width: $screen-sm) {
+      display: block;
+      margin: auto;
+    }
+  }
+
+  .overlay {
+    @media only screen and (max-width: $screen-sm) {
+      position: fixed;
+      height:100vh;
+      overflow: hidden;
+    }
+
+    &-content {
+      padding: rem(24) rem(54) rem(46);
+      width: rem(754);
+      color: $carbon;
+      @media only screen and (max-width: $screen-sm) {
+        padding: rem(56) rem(10);
+        height: 100%;
+        overflow: auto;
+      }
+    }
+    &-checkout {
+      max-height: 80vh;
+      overflow: auto;
+      @media only screen and (max-width: $screen-sm) {
+        max-height: none;
+      }
+    }
+    &__title {
+      font-family: $font-semibold;
+      font-size: rem(18);
+      line-height: rem(32);
+    }
+    &__text {
+      font-size: rem(14);
+      line-height: rem(22);
+      color: $carbon;
+      text-align: left;
+      display: block;
+      margin: 0 rem(10) rem(16);
+    }
+    &__tables {
+      display: flex;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      align-content: stretch;
+      margin: rem(23) auto rem(30);
+      height: 100%;
+
+      @media only screen and (max-width: $screen-sm) {
+        @include border-radius(2);
+        max-width: rem(303);
+        overflow: hidden;
+      }
+    }
+    &__table {
+      width: 50%;
+      @include border-radius(2);
+      border: 1px solid $platino;
+      margin: 0 rem(10);
+      padding: 0 0 rem(47);
+      flex-direction: column;
+      justify-content: space-between;
+      position: relative;
+      background-color: $nieve;
+      
+      @media only screen and (max-width: $screen-sm) {
+        width: 100%;
+        flex: 0 0 100%;
+        display: flex;
+        margin: 0;
+      }
+
+      &:hover, &.open {
+        border: 1px solid $blue-secondary;
+        box-shadow: 0 0 0 1px $blue-secondary;
+        @media only screen and (max-width: $screen-sm) {
+          border: 2px solid $blue-secondary;
+        }
+        .overlay-table {
+          &__foot {
+            .overlay-table__row {
+              color: #fff;
+              background-color: $blue-secondary;
+              font-family: $font-semibold;
+            }
+          }
+        }
+      }
+    }
+    &-table {
+      &__row {
+        padding: rem(9);
+        font-size: rem(14);
+        border-bottom: 1px solid $platino;
+        background-color: #fff;
+        &:last-child {
+          border: 0;
+        }
+      }
+      &__head {
+        .overlay-table__row {
+          font-family: $font-semibold;
+          font-size: rem(24);
+          line-height: rem(32);
+          border-bottom: 1px solid $platino;
+        }
+      }
+      &__body {
+        display: flex;
+        flex-direction: column;
+        height: calc(100% - 48px);
+      }
+      &__foot {
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        left: 0;
+        .overlay-table__row {
+          color: $blue-secondary;
+          font-size: rem(24);
+          line-height: rem(28);
+          border-bottom: 0;
+          border-top: 1px solid $platino;
+        }
+      }
+    }
+    .btn {
+      margin: rem(15) auto 0;
+    }
+    .tabs .btn-tab {
+      margin: 0;
+      padding: 0;
+      width: rem(100);
+      a {
+        padding: rem(20) 0 0;
+        font-size: rem(16);
+      }
+    }
+  }
+
+} 
+

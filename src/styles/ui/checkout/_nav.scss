@@ -1,0 +1,116 @@
+.checkout-nav {
+  text-align: left;
+  .nav {
+    &__bar {
+      &.logo-bar {
+        padding: rem(13) rem(24);
+        border-bottom: 1px solid $platino;
+        @media only screen and (max-width: $screen-sm) {
+        padding: rem(16);
+        }
+        img {
+        @media only screen and (max-width: $screen-sm) {
+          max-height: rem(24);
+        }
+        }
+      }
+      ul {
+        font-size: 0;
+      }
+      li {
+        display: inline-block;
+        width: 33.3333%;
+        font-family: $font-semibold;
+        font-size: rem(18);
+        line-height: rem(32);
+        text-align: center;
+        padding: rem(9) 0;
+        position: relative;
+        background-color: #FBFBFB;
+        color: $hierro;
+        border-bottom: 1px solid $platino;
+        @media only screen and (max-width: $screen-sm) {
+          padding: rem(10) 0 rem(9) rem(18);
+        }
+        &::before {
+          content: '';
+          position: absolute;
+          left: rem(1);
+          top: 0;
+          width: 0;
+          height: 0;
+          border-style: solid;
+          border-width: 25px 0 25px 20px;
+          border-color: transparent transparent transparent $platino;
+          @media only screen and (max-width: $screen-sm) {
+            border-width: 25px 0 25px 15px;
+            left: 0px;
+          }
+        }
+        &::after {
+          content: '';
+          position: absolute;
+          right: rem(-19);
+          top: 0;
+          z-index: 1;
+          width: 0;
+          height: 0;
+          border-style: solid;
+          border-width: 25px 0 25px 20px;
+          border-color: transparent transparent transparent #FBFBFB;
+          @media only screen and (max-width: $screen-sm) {
+            border-width: 25px 0 25px 15px;
+            right: rem(-14);
+          }
+        }
+        &.active {
+          color: $carbon;
+          background-color: #fff;
+          border: 0;
+          &::after {
+            border-color: transparent transparent transparent #fff;
+          }
+        }
+        &:first-child {
+          &::before {
+            display: none;
+          }
+        }
+        &:last-child {
+          &::after {
+            display: none;
+          }
+        }
+        span {
+          span {
+            @media only screen and (max-width: $screen-sm) {
+              display: none;
+            }
+            &.step-number {
+              display: inline-block;
+            }
+          }
+        }
+        &.done {
+          @media only screen and (max-width: $screen-sm) {
+            padding: rem(10) 0 rem(9) rem(8);
+          }
+          > span {
+            &::before {
+              content: '';
+              display: inline-block;
+              width: rem(16);
+              height: rem(10);
+              background-image: url(../imgs/ico-blue-check.png);
+              background-repeat: no-repeat;
+              background-size: 100%;
+            }
+          }
+          .step-number {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}

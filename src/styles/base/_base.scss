@@ -1,0 +1,63 @@
+// bower:scss
+// endbower
+body, html {
+	text-rendering: optimizeLegibility;
+	text-rendering: geometricPrecision;
+	font-smooth: always;
+
+	font-smoothing: antialiased;
+	-moz-font-smoothing: antialiased;
+	-webkit-font-smoothing: antialiased;
+	-webkit-font-smoothing: subpixel-antialiased;
+}
+
+body{
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+
+	font-family: $font-regular;
+	color: $carbon;
+	background: $main-background;
+	text-align:center;
+}
+
+.visually-hidden{
+	clip: rect(0 0 0 0);
+	clip: rect(0, 0, 0, 0);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+}
+.item-block{
+	display: block;
+}
+.item-desk{
+	display: inline-block;
+}
+.item-resp{
+	display: none;
+}
+
+/* --------------- Media Queries ----------------- */
+
+@media only screen and (max-width: $screen-lg) { }
+
+@media only screen and (max-width: $screen-md) { }
+
+@media only screen and (max-width: $screen-sm) {
+
+	.item-desk{
+		display: none;
+	}
+	.item-resp{
+		display: inline-block;
+	}
+
+}
+
+@media only screen and (max-width: $screen-xs) { }
+
+

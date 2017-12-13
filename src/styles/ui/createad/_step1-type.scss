@@ -1,0 +1,137 @@
+.type-section {
+	text-align: left;
+	vertical-align: top;
+	overflow: hidden;
+	width: 100%;
+	position: relative;
+	// background: url(../imgs/step1-bg.png) no-repeat right bottom;
+
+	.type-container {
+		width: 50%;
+		max-width: 42.5rem;
+		min-height: 100vh;
+		display: inline-block;
+		margin-bottom: 3rem;
+		
+		.type-belt {
+			padding-top: rem(80);
+			max-width: rem(410);
+			margin:auto;
+			background: rgba(255,255,255,0.95);
+		}
+	}
+
+	.bike-image {
+		display: inline-block;
+		width: 49%;
+		vertical-align: top;
+		overflow: hidden;
+
+		img {
+			position: absolute;
+			width: 80%;
+			margin: auto;
+			bottom: 0;
+			top: 0;
+			margin-left:30rem;
+			opacity:0;
+		}
+
+		.bike-img {
+			-moz-transform: scale(-1, 1);
+			-webkit-transform: scale(-1, 1);
+			-o-transform: scale(-1, 1);
+			-ms-transform: scale(-1, 1);
+			transform: scale(-1, 1);
+			top:auto;
+			max-height:80vh;
+			width:auto;
+			
+			-webkit-transition: all .5s ease-in;
+			   -moz-transition: all .5s ease-in;
+			    -ms-transition: all .5s ease-in;
+			     -o-transition: all .5s ease-in;
+			        transition: all .5s ease-in;
+		}
+
+		.circle-img {
+			
+			top: auto;
+			margin-bottom: 2rem;
+			-webkit-transition: all .5s ease-in;
+			   -moz-transition: all .5s ease-in;
+			    -ms-transition: all .5s ease-in;
+			     -o-transition: all .5s ease-in;
+			        transition: all .5s ease-in;
+		}
+	}
+
+	.bike-type {
+		
+		&.active {
+			
+			
+			.bike-img {
+				display:block;
+				margin-left: 0rem;
+				opacity:1;
+				-webkit-transition: all .4s ease-out;
+				   -moz-transition: all .4s ease-out;
+				    -ms-transition: all .4s ease-out;
+				     -o-transition: all .4s ease-out;
+				        transition: all .4s ease-out;
+			}
+
+			.circle-img {
+				margin-left: 15rem;
+				opacity:1;
+				-webkit-transition: all .4s ease-out;
+				   -moz-transition: all .4s ease-out;
+				    -ms-transition: all .4s ease-out;
+				     -o-transition: all .4s ease-out;
+				        transition: all .4s ease-out;
+			}
+
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+/* --------------- Media Queries ----------------- */
+
+@media only screen and (max-width: $screen-lg) { }
+
+@media only screen and (max-width: $screen-md) { }
+
+@media only screen and (max-width: $screen-sm) { 
+	.type-section {
+		
+		.type-container {
+			width: 100%;
+		}
+		
+		.bike-image {
+			display:none;
+		}
+	}
+}
+
+@media only screen and (max-width: $screen-xs) {
+	.type-section {
+		background:none;
+		.type-container .type-belt {
+			padding-top: rem(10);
+		}
+		.bisel {
+			margin:0 5%;
+		}
+	}
+}

@@ -1,0 +1,150 @@
+.main-menu .burguer-menu {
+	display: none;
+}
+.main-menu .menu{
+	text-align: right;
+	list-style: none;
+	pointer-events:all;
+}
+.main-menu .menu li{
+	display: inline-block;
+	margin: 0 10px;
+	vertical-align: middle;
+}
+.main-menu .menu li a{
+	font-family: 'futura-medium', arial, sans-serif;
+	font-size: 17px;
+	color: #fff;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+.main-menu .menu li a:focus,
+.main-menu .menu li a:active,
+.main-menu .menu li a:hover,
+.main-menu .menu li a.active{
+	text-decoration: none;
+	padding-bottom: 2px;
+	border-bottom: 1px solid #fff;
+}
+
+
+@media only screen and (max-width: 768px) {
+
+	.main-menu{
+		padding: 20px 20px;
+		pointer-events: auto;
+	}
+
+	.main-menu.open-menu{
+		height: auto;
+		background: rgba(17, 30, 46, 0.7);
+		margin-bottom: 10px;
+	}
+
+	.burguer-menu {
+		position: absolute;
+		cursor: pointer;
+		font-size: 23px;
+		display: block;
+		right: 20px;
+		top: 13px;
+		height: 38px;
+		color: #fff;
+		padding-top: 12px;
+		-webkit-backface-visibility: visible !important;
+
+		-moz-box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+		box-sizing: border-box;
+
+		-webkit-transition: opacity 700ms linear 0ms;
+		-moz-transition: opacity 700ms linear 0ms;
+		-ms-transition: opacity 700ms linear 0ms;
+		-o-transition: opacity 700ms linear 0ms;
+		transition: opacity 700ms linear 0ms;
+	}
+
+	.burguer-menu span {
+		background: #ffffff;
+		display: block;
+		width: 40px;
+		height: 2px;
+
+		-webkit-transition: -webkit-transform 200ms cubic-bezier(0.63, 0.62, 0.48, 1.64);
+		-moz-transition: -moz-transform 200ms cubic-bezier(0.63, 0.62, 0.48, 1.64);
+		-ms-transition: -ms-transform 200ms cubic-bezier(0.63, 0.62, 0.48, 1.64);
+		-o-transition: -o-transform 200ms cubic-bezier(0.63, 0.62, 0.48, 1.64);
+		transition: transform 200ms cubic-bezier(0.63, 0.62, 0.48, 1.64);
+	}
+
+
+	.open-menu .burguer-menu span {
+		background: #fff;
+	}
+
+	.open-menu .burguer-menu .top {
+		-webkit-transform: rotateZ(45deg) translateX(5px) translateY(5px) !important;
+		-moz-transform: rotateZ(45deg) translateX(5px) translateY(5px) !important;
+		-ms-transform: rotateZ(45deg) translateX(5px) translateY(5px) !important;
+		-o-transform: rotateZ(45deg) translateX(5px) translateY(5px) !important;
+		transform: rotateZ(45deg) translateX(5px) translateY(5px) !important;
+	}
+
+	.open-menu .burguer-menu .bottom {
+		-webkit-transform: rotateZ(-45deg) translateX(5px) translateY(-3px) !important;
+		-moz-transform: rotateZ(-45deg) translateX(5px) translateY(-3px) !important;
+		-ms-transform: rotateZ(-45deg) translateX(5px) translateY(-3px) !important;
+		-o-transform: rotateZ(-45deg) translateX(5px) translateY(-3px) !important;
+		transform: rotateZ(-45deg) translateX(5px) translateY(-3px) !important;
+	}
+
+	.open-menu .burguer-menu .meat {
+		opacity: 0;
+	}
+
+	.burguer-menu .top, .burguer-menu .meat {
+		margin-bottom: 4px;
+	}
+
+	.burguer-menu .meat {
+		-webkit-transition: opacity 300ms ease-in-out 0ms;
+		-moz-transition: opacity 300ms ease-in-out 0ms;
+		-ms-transition: opacity 300ms ease-in-out 0ms;
+		-o-transition: opacity 300ms ease-in-out 0ms;
+		transition: opacity 300ms ease-in-out 0ms;
+	}
+
+	.burguer-menu:hover .top {
+		-webkit-transform: rotateZ(0deg) translateX(0px) translateY(-3px);
+		-moz-transform: rotateZ(0deg) translateX(0px) translateY(-3px);
+		-ms-transform: rotateZ(0deg) translateX(0px) translateY(-3px);
+		-o-transform: rotateZ(0deg) translateX(0px) translateY(-3px);
+		transform: rotateZ(0deg) translateX(0px) translateY(-3px);
+	}
+
+	.burguer-menu:hover .bottom {
+		-webkit-transform: rotateZ(0deg) translateX(0px) translateY(3px);
+		-moz-transform: rotateZ(0deg) translateX(0px) translateY(3px);
+		-ms-transform: rotateZ(0deg) translateX(0px) translateY(3px);
+		-o-transform: rotateZ(0deg) translateX(0px) translateY(3px);
+		transform: rotateZ(0deg) translateX(0px) translateY(3px);
+	}
+
+
+	.main-menu .menu {
+		display: none;
+	}
+
+	.open-menu .menu {
+		display: block;
+		margin-top: 70px;
+		text-align: center;
+	}
+
+	.open-menu .menu li {
+		display: block;
+		float:none;
+	}	
+
+
+}

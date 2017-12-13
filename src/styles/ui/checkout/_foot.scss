@@ -1,0 +1,66 @@
+.checkout-foot {
+  margin: rem(60) 0 0;
+  .foot {
+    &__bar {
+      width: 100%;
+      border-top: 1px solid $platino;
+      padding: rem(26) 0;
+      @media only screen and (max-width: $screen-sm) {
+        text-align: center;
+      }
+      p {
+        font-size: rem(16);
+        line-height: rem(32);
+        font-family: $font-semibold;
+        color: $carbon;
+        span {
+          display: inline-block;
+          font-family: $font-regular;
+          color: $hierro;
+          margin: 0 0 0 rem(20);
+          @media only screen and (max-width: $screen-sm) {
+            display: block;
+            margin: rem(10) 0 0;
+          }
+          a {
+            font-family: $font-semibold;
+            color: $palid-blue;
+            text-decoration: none;
+            @media only screen and (max-width: $screen-sm) {
+              display: inline-block;
+            }
+          }
+          span {
+            margin: 0;
+            @media only screen and (max-width: $screen-sm) {
+              display: block;
+            }
+          }
+        }
+      }
+      ul {
+        text-align: center;
+        @media only screen and (max-width: $screen-sm) {
+          text-align: center;
+        }
+      }
+      li {
+        display: inline-block;
+        vertical-align: middle;
+        margin: 0 rem(12);
+        max-width: calc(100% / 10);
+        @media only screen and (max-width: $screen-sm) {
+          max-width: 100%;
+          margin: rem(8);
+        }
+        @media only screen and (max-width: $screen-xs) {
+          width: 49%;
+          margin: rem(8) 0;
+        }
+        img {
+          max-width: 100%;
+        }
+      }
+    }
+  }
+}

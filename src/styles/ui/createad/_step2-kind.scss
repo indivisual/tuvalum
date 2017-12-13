@@ -1,0 +1,58 @@
+.kind-section {
+	text-align:left;
+
+	.kind-container {
+		width:100%;
+		max-width: rem(725);
+		min-height: 100vh;
+		background:#FFF;
+		margin:auto auto rem(20);
+		
+		.kind-belt {
+			padding-top: rem(80);
+			max-width: rem(500);
+			margin:auto;
+		}
+
+		.bisel {
+			max-width: rem(325);
+			margin: rem(40) auto rem(80);
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+/* --------------- Media Queries ----------------- */
+
+@media only screen and (max-width: $screen-lg) { }
+
+@media only screen and (max-width: $screen-md) { }
+
+@media only screen and (max-width: $screen-sm) { }
+
+@media only screen and (max-width: $screen-xs) {
+	.kind-section {
+		background:none;
+		.kind-container {
+			margin-bottom:0;
+
+			.kind-belt {
+				padding-top: rem(10);
+				margin:0 rem(20);
+			}
+
+			.bisel {
+				margin:rem(40) 0 0;
+			}
+		}
+		
+	}
+}

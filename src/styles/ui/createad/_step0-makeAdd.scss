@@ -1,0 +1,112 @@
+.make-section {
+	text-align:left;
+	background: url(../imgs/step0-bg.png) no-repeat 90% center;
+
+	.make-container {
+		width:50%;
+		background:#FFF;
+		min-height: 100vh;
+		min-width:rem(480);
+	
+		.make-belt {
+			padding-top: rem(20);
+			max-width: rem(430);
+			width:100%;
+			margin:auto;
+
+			.steps {
+				margin:rem(40) 0;
+			}
+
+			.step {
+				margin:rem(30) 0 rem(20);
+				border-bottom:1px solid $platino;
+				padding-bottom:rem(20);
+				cursor:pointer;
+				-webkit-transition:all 0.4s;
+				   -moz-transition:all 0.4s;
+				    -ms-transition:all 0.4s;
+				     -o-transition:all 0.4s;
+				        transition:all 0.4s;
+
+				&:hover .progressbar:after{
+					 
+						right:rem(-45);
+						-webkit-transition:all 0.4s;
+						   -moz-transition:all 0.4s;
+						    -ms-transition:all 0.4s;
+						     -o-transition:all 0.4s;
+						        transition:all 0.4s;
+					
+				}
+
+				&.disabled {
+					opacity: .5;
+					-webkit-filter: grayscale(100%);
+    				filter: grayscale(100%);
+    				pointer-events:none;
+				}
+			}
+
+			.progressbar {
+				height: rem(5);
+				@include border-radius(100);
+				background: rgba(216,216,216,0.41);
+				margin-bottom:rem(15);
+				margin-right: rem(60);
+				position:relative;
+
+				&:after {
+					content: '>';
+					color:#A0B3C7;
+					position: absolute;
+					right:rem(-40);
+					top:rem(-10);
+					font-size:rem(20);
+					font-family:$font-semibold;
+				}
+
+				span {
+					height: rem(5);
+					@include border-radius(100);
+					background: linear-gradient(63.43deg, #377BFF 0%, #4EB9FE 100%);
+					position: absolute;
+					width: 66%;
+					top:0;
+					left:0;
+				}
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
+
+/* --------------- Media Queries ----------------- */
+
+@media only screen and (max-width: $screen-lg) { }
+
+@media only screen and (max-width: $screen-md) { }
+
+@media only screen and (max-width: $screen-sm) { }
+
+@media only screen and (max-width: $screen-xs) {
+	.make-section {
+		.make-container {
+			background:#FFF url(../imgs/half-circle.png) no-repeat right bottom;
+			padding-bottom:rem(70);
+			width:100%;
+			min-width: initial;
+
+			.make-belt {
+				width:90%;
+				margin:0 5%;
+			}
+		}
+	}
+}

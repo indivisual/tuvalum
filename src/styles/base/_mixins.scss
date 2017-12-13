@@ -1,0 +1,45 @@
+/* Tuvalum mixins */
+
+
+
+/* Use  @include blue-gradient(); */
+@mixin blue-gradient() {
+	background: #377bff;
+	background: -moz-linear-gradient(top, #377bff 0%, #4eb9fe 100%);
+	background: -webkit-linear-gradient(top, #377bff 0%, #4eb9fe 100%);
+	background: linear-gradient(to bottom, #377bff 0%, #4eb9fe 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#377bff', endColorstr='#4eb9fe',GradientType=0 );
+}
+
+@mixin magenta-gradient() {
+	background: #D562FF;
+	background: -moz-linear-gradient(top, #D562FF 0%, #4E55FE 100%);
+	background: -webkit-linear-gradient(top, #D562FF 0%, #4E55FE 100%);
+	background: linear-gradient(to bottom, #D562FF 0%, #4E55FE 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#D562FF', endColorstr='#4E55FE',GradientType=0 );
+}
+
+@mixin yellow-gradient() {
+	background: #D0FF62;
+	background: -moz-linear-gradient(top, #D0FF62 0%, #34D397 100%);
+	background: -webkit-linear-gradient(top, #D0FF62 0%, #34D397 100%);
+	background: linear-gradient(to bottom, #D0FF62 0%, #34D397 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#D0FF62', endColorstr='#34D397',GradientType=0 );
+}
+
+@function rem($pixels, $context: $default-font-size) {
+	@return #{$pixels/$context}rem;
+}
+
+@mixin border-radius($size) {
+	@if $size >= 0 {
+
+		@if $size != 50% {
+			-webkit-border-radius: $size + px;
+			border-radius: $size + px;
+		} @else {
+			-webkit-border-radius: $size;
+			border-radius: $size;
+		}
+	}
+}

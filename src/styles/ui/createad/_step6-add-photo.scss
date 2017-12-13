@@ -1,0 +1,108 @@
+.add-photo-section {
+	text-align:left;
+
+	.add-photo-container {
+		width:100%;
+		max-width: rem(936);
+		min-height: 100vh;
+		background:#FFF;
+		margin:auto auto rem(20);
+
+		.img-container {
+			background:url(../imgs/bici-referencia.png) no-repeat center center/contain;
+			width:100%;
+		}
+
+		.file-container {
+			position: relative;
+		
+			.image-result {
+				position: absolute;
+				top: 0;
+				width: 100%;
+				height: 100%;
+				z-index: 0;
+				pointer-events: none;
+				opacity: 0;
+				border:1px dashed $hierro;
+				-webkit-transition: all 1.5s;
+				   -moz-transition: all 1.5s;
+				    -ms-transition: all 1.5s;
+				     -o-transition: all 1.5s;
+				        transition: all 1.5s;
+
+				.image-result_change {
+					position:absolute;
+					width:rem(57);
+					height:rem(57);
+					left:0;
+					bottom:0;
+					cursor: pointer;
+				}
+
+				.image-result_delete {
+					position:absolute;
+					width:rem(57);
+					height:rem(57);
+					right:0;
+					bottom:0;
+					cursor: pointer;
+				}
+			}
+		}
+
+		.eqWrap {
+			display: flex;
+			justify-content: space-between;
+			margin:rem(80) 0;
+
+			.eqH {
+				width:50%;
+			}
+		}
+	}	
+}
+
+
+
+/* --------------- Media Queries ----------------- */
+
+@media only screen and (max-width: $screen-lg) { }
+
+@media only screen and (max-width: $screen-md) {
+	
+}
+
+@media only screen and (max-width: $screen-sm) { }
+
+@media only screen and (max-width: $screen-xs) {
+	.add-photo-section {
+		
+		.add-photo-container {
+			margin:0;
+
+			.belt {
+				margin:0 rem(10);
+			}
+
+			.img-container {
+				padding-top:60.5%;
+			}
+
+			.file-container {
+				margin: rem(40) 0;
+			}
+
+			.eqWrap {
+				display: block;
+				margin:rem(20) 0;
+				.eqH {
+					width:100%;
+				}
+				
+			}
+		}
+		
+		
+	}
+}

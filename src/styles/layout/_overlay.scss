@@ -1,0 +1,73 @@
+
+.overlay {
+	/* background-color: adjust-color(hsl(207, 100%, 34%), $hue: 10deg, $saturation: 40%, $lightness: 10%, $alpha: -0.4); */
+	background-color: transparentize($carbon, 0.2);
+	height: 100vh;
+	left: 0;
+	overflow: hidden;
+	position: fixed;
+	top: 0;
+	width: 100vw;
+	z-index: 50;
+	background-blend-mode: multiply;
+	display: none;
+
+	@media only screen and (max-width: $screen-md) {
+		z-index: 50;
+	}
+	@media only screen and (max-width: $screen-sm) {
+		height: auto;
+		position: absolute;
+	}
+}
+
+
+.overlay {
+	&-wrapper {
+		display: none;
+		width: 100%;
+		height: 100%;
+	}
+	.overlay-content {
+		background-color: #fff;
+		display: block;
+		height: auto;
+		@extend %centered;
+		@include border-radius(4);
+		padding: 0;
+		text-align: center;
+		top: 60%;
+		width: auto;
+		max-width: 100%;
+		visibility: hidden;
+
+		@media only screen and (max-width: $screen-sm) {
+			position: static;
+			transform: none;
+			left: 0;
+			top: 0;
+			@include border-radius(0);
+		}
+
+		.overlay-close {
+			display: inline-block;
+			position: absolute;
+			top: rem(15);
+			right: rem(15);
+			width: rem(25);
+			height: rem(25);
+			font-size: 0;
+
+			&::before {
+				content: '';
+				display: block;
+				width: 100%;
+				height: 100%;
+				background-image: url(../imgs/icon-close.png);
+				background-repeat: no-repeat;
+				background-size: auto;
+				background-position: center;
+			}
+		}
+	}
+}

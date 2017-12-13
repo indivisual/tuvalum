@@ -1,0 +1,108 @@
+.checkout-step-2 {
+
+    .title-container {
+        display:flex;
+        justify-content: space-between;
+    }
+
+    .checkout-step-title {
+
+        font-family: $font-regular;
+        color: $carbon;
+        text-align: left;
+
+        i {
+            background: $blue-secondary;
+            width: rem(25);
+            display: inline-block;
+            height: rem(25);
+            border-radius: 50%;
+            padding: rem(4);
+            color: #FFF;
+            font-style: normal;
+            font-size: rem(16);
+            font-family: $font-bold;
+            vertical-align: top;
+            text-align: center;
+        }
+    }
+
+    .checkout-step-name {
+        font-family: $font-semibold;
+        color: $carbon;
+        text-align: left;
+        margin-left: 30px;
+
+        & + .checkout-step-title {
+            margin-left: 30px;
+        }
+    }
+
+    .account-link {
+        margin:rem(18) rem(15);
+    }
+
+    .checkout-form {
+        margin: rem(15) rem(15) rem(30);
+        border-bottom:1px solid $platino;
+    
+        .text-input {
+            max-width: none;
+        }
+        
+        .select-group, .input-group {
+            padding: 0 rem(20);
+        }
+
+        .grid-display {
+            display:grid;
+        }
+    }
+}
+
+
+
+/* --------------- Media Queries ----------------- */
+
+@media only screen and (max-width: $screen-xs) {
+    .checkout-step-2 {
+        .title-container {
+            display: block;
+        }
+
+        .btn {
+            width:100%;
+        }
+
+        .account-link {
+            margin: 0;
+            text-align: left;
+        }
+
+        .checkout-form {
+            margin: 0;
+
+            .select-group,
+            .input-group {
+                padding: 0;
+            }
+        }
+
+        .user-address-data .checkout-form {
+            border-bottom: 0;
+        }
+
+        .form-inline > div:first-child:nth-last-child(2),
+        .form-inline > div:first-child:nth-last-child(2) ~ div {
+            width: 100%;
+        }
+
+        .checkout-step-name {
+            margin-left: 0px;
+    
+            & + .checkout-step-title {
+                margin-left: 0px;
+            }
+        }
+    }    
+}

@@ -1,0 +1,125 @@
+.arrow-menu {
+	margin:0;
+	width:100%;
+
+    li {
+        display: inline-block;
+        padding: rem(18) 0 rem(18) rem(7);
+        color:$hierro;
+        font-family: $font-semibold;
+        position:relative;
+        border-bottom:1px solid $platino;
+        background-color: #FBFBFB;
+        font-size: rem(18);
+    }
+
+    li:after,
+    li:before {
+        left: 100%;
+        top: 50%;
+        border: solid transparent;
+        content: " ";
+        height: 0;
+        width: 0;
+        position: absolute;
+        pointer-events: none;
+        z-index:5;
+    }
+    
+    li:after {
+        border-color: rgba(196, 208, 213, 0);
+        border-left-color: #fbfbfb;
+        border-width: rem(26);
+        margin-top: rem(-26);
+    }
+
+    li:before {
+        border-color: rgba(101, 117, 128, 0);
+        border-left-color: $platino;
+        border-width: rem(27);
+        margin-top: rem(-27);
+    }
+
+    
+
+    /* one item */
+    li:first-child:nth-last-child(1) {
+        width: 100%;
+    }
+    
+    li:first-child:nth-last-child(2),
+    li:first-child:nth-last-child(2) ~ li {
+        width: 50%;
+    }
+    
+    li:first-child:nth-last-child(3),
+    li:first-child:nth-last-child(3) ~ li {
+        width: 33.3333%;
+    }
+    
+    li:first-child:nth-last-child(4),
+    li:first-child:nth-last-child(4) ~ li {
+        width: 25%;
+    }
+
+    li:first-child:nth-last-child(4),
+    li:first-child:nth-last-child(4) ~ li {
+        width: 20%;
+    }
+
+    .activated {
+        background: transparent;
+        color:#525763;
+        border-bottom:1px solid #FFF;
+        z-index:2;
+
+        &:after {
+            border-left-color: #FFF;
+        }
+    }
+
+    li:last-child:after,
+    li:last-child:before {
+        border:0;
+    }
+
+    .checked {
+        background: #FBFBFB url(../imgs/arrow-menu/check-icon-arrow-menu.png) no-repeat left center;
+        width: 20px;
+        height: 11px;
+        display: inline-block;
+        margin-right: 2px;
+    }
+}
+
+/* --------------- Media Queries ----------------- */
+
+@media only screen and (max-width: $screen-xs) {
+    .arrow-menu {
+
+        li {
+            font-size: rem(16);
+            padding: rem(16) 0 rem(16) rem(7);
+            span {
+                display: none;
+            }
+        }
+
+        li:after {
+            border-width: rem(23);
+            margin-top: rem(-23);
+        }
+    
+        li:before {
+            border-width: rem(24);
+            margin-top: rem(-24);
+        }
+
+        .checked {
+            width: 20px;
+            height: 11px;
+            margin-right: -2px;
+            margin-left: 4px;
+        }
+    }
+}

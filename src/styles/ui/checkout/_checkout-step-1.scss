@@ -1,0 +1,159 @@
+.checkout-step-1 {
+    
+    .checkout-mechanic {
+        display: flex;
+        margin: rem(20) 0 rem(30);
+        flex-wrap: wrap;
+
+        .checkout-mechanic--image {
+            margin: auto;
+            min-width: rem(170);
+            width: 35%;
+        }
+
+        .checkout-mechanic-info {
+            text-align: left;
+            padding: 0 rem(20);
+            width:65%;
+        }
+
+        .checkout-mechanic--certificate {
+            color:$palid-blue;
+            text-transform: uppercase;
+            font-size: rem(12);
+            font-family: $font-semibold;
+            
+            .check {
+                background: #FFFFFF url(../imgs/checkout/check-icon.png) no-repeat left center;
+                width: rem(14);
+                height: rem(13);
+                display: inline-block;
+                margin-right: rem(2);
+                vertical-align: bottom;
+            }
+        }
+
+        .checkout-mechanic--text {
+            margin-top:rem(20);
+            line-height: rem(24);
+            color: $hierro;
+        }
+    }
+
+
+    .checkout-finetunning {
+        border: 2px solid $amarillo;
+        @include border-radius(4);
+        text-align: left;
+        padding: rem(28);
+        margin: rem(30) 0;
+
+        > * {
+            display: flex;
+            justify-content: space-between;
+
+            > *:nth-child(1) {
+                width: 70%;
+            }
+
+            > *:nth-child(2) {
+                width: 30%;
+            }
+        }
+
+        .subtitle {
+            font-family: $font-semibold;
+        }
+
+        .highlighted {
+            color: $amarillo;
+        }
+
+        .checkout-finetunning--text {
+            line-height: rem(24);
+            color: $hierro;
+
+            a {
+                color: $hierro;
+                font-family: $font-bold;
+            }
+        }
+
+        .checkout-finetunning--price {
+            font-family: $font-semibold;
+            font-size: rem(32);
+            text-align: center;
+        }
+
+        .checkout-finetunning--cta .btn {
+            background-color: transparent;
+            color: $carbon;
+            border: 2px solid $plata;
+            @include border-radius(4);
+            margin: rem(15) rem(10) 0;
+        }
+    }
+
+}
+
+
+/* --------------- Media Queries ----------------- */
+
+@media only screen and (max-width: $screen-xs) {
+    .checkout-step-1 {
+        
+        .checkout-mechanic {
+            display:block;
+
+            .checkout-mechanic-info {
+                padding:0;
+                width:100%;
+            }
+
+            .checkout-mechanic--certificate {
+                margin-top:rem(15);
+            }
+
+            .checkout-mechanic--image {
+                width:100%;
+                max-width: none;
+            }
+        }
+
+        
+
+        .checkout-finetunning {
+            display:block;
+            padding:6%;
+
+            .checkout-finetunning--cta{
+                display: block;
+
+                .checkout-finetunning--text {
+                    width:100%;
+                    margin: 0 0 rem(20) 0;
+                }
+            }
+
+            .checkout-finetunning--price {
+                background: $amarillo;
+                color: $main-background;
+                border-radius: 50%;
+                width: rem(64);
+                height: rem(64);
+                padding-top: rem(20);
+                font-size: rem(24);
+            }
+
+            .subtitle {
+                width: rem(170);
+                margin-top: rem(12);
+            }
+        }
+
+        .btn {
+            width: 100%;
+            margin:rem(10) 0;
+        }
+    }
+}

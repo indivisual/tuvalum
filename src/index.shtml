@@ -1,0 +1,46 @@
+<!doctype html>
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8">
+    <title>Tuvalum</title>
+    <meta name="description" content="">
+    
+    <!--#include file="_header.html" -->
+	
+	<style>
+		.tvm-index {
+			text-align: left;
+    		margin: 20px;
+		}
+		.tvm-index li {
+			text-align: left;
+    		margin: 10px 20px;
+		}
+	</style>
+
+  </head>
+  <body>
+
+	<div class="tvm-index">
+
+		<p class="title">Índice de maquetas</p>
+
+		<ol>
+			<li><p class="subtitle">Checkout</p>
+				<ol>
+					<li><a href="checkout-step-1.html">Checkout paso 1: Revisión de pedido</a></li>
+					<li><a href="checkout-step-2.html">Checkout paso 2: Envío. Formulario datos personales</a></li>
+					<li><a href="checkout-step-2-registered.html">Checkout paso 2: Envío usuario registrado</a></li>
+					<li><a href="checkout-step-3.html">Checkout paso 3: Pago</a></li>
+					<li><a href="checkout-confirmation.html">Checkout: página de confirmacion</a></li>
+					<li><a href="checkout-confirmation-transfer.html">Checkout: página de confirmacion con transferencia</a></li>
+				</ol>
+
+			</li>
+		</ol>
+		
+	</div>
+	
+
+
+<!--#include file="_footer.html" -->

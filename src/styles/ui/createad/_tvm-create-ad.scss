@@ -1,0 +1,21 @@
+.tvm-create-ad {
+	.belt {
+		max-width: rem(1200);
+		margin:auto;
+	}
+} 
+
+
+/* --------------- Media Queries ----------------- */
+
+@media only screen and (max-width: $screen-lg) { }
+
+@media only screen and (max-width: $screen-md) { }
+
+@media only screen and (max-width: $screen-sm) { }
+
+@media only screen and (max-width: $screen-xs) { 
+	.tvm-create-ad {
+		margin: 0;
+	}
+}

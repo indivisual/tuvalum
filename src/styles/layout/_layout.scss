@@ -1,0 +1,159 @@
+/* Texts */
+
+.title {
+	font-size:rem(32);
+	font-family:$font-bold;
+	margin:rem(20) 0;
+	line-height: rem(37);
+}
+
+.subtitle {
+	font-size:rem(16);
+	font-family:$font-bold;
+	margin:rem(20) 0;
+}
+
+.group-title {
+	font-size:rem(16);
+	font-family:$font-semibold;
+	margin:rem(10) 0;
+}
+
+.headertext {
+	color:$palid-blue;
+	font-size:rem(18);
+	margin:rem(20) 0 rem(-15);
+	font-family:$font-bold;
+}
+
+.title-mini {
+	color:$mini;
+	font-size:rem(12);
+	font-family:$font-semibold;
+	text-transform:uppercase;
+	margin:rem(10) 0;
+}
+
+.sub {
+	margin:0 0 rem(-15);
+}
+
+.extra-extra-large {
+	font-size:rem(24);
+	margin:rem(15) 0;
+}
+
+.extra-large {
+	font-size:rem(18);
+	margin:rem(12) 0;
+}
+
+.large {
+	font-size:rem(16);
+	margin:rem(10) 0;
+	line-height:rem(22);
+}
+
+.medium {
+	font-size:rem(14);
+	margin:rem(5) 0;
+	line-height:rem(22);
+}
+
+.small {
+	font-size:rem(12);
+	line-height:rem(18);
+}
+
+.extra-small {
+	font-size:rem(10);
+	line-height:rem(16);
+}
+
+.bold {
+	font-family:$font-bold;
+}
+
+.line-through {
+	position:relative;
+	text-align:center;
+	margin:rem(30) 0;
+
+	&:before {
+		position:absolute;
+		content:'';
+		height:rem(1);
+		background: $plata;
+		top:53%;
+		width:100%;
+		left:0;
+		z-index: 0;
+	}
+
+	span {
+		background:#FFF;
+		position: relative;
+    	padding: 0 rem(7);
+	}
+}
+
+.center-text {
+	text-align:center;
+}
+
+.nmt {
+	margin-top:0;
+}
+
+.only-desktop {
+	display:initial;
+}
+
+.only-mobile {
+	display:none;
+}
+
+
+
+/* -----  Variable selectors ------ */
+
+%centered {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+%vertical-centered {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+}
+%horizontal-centered {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+}
+%inline-block {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+
+
+/* --------------- Media Queries ----------------- */
+
+@media only screen and (max-width: $screen-lg) { }
+
+@media only screen and (max-width: $screen-md) { }
+
+@media only screen and (max-width: $screen-sm) { }
+
+@media only screen and (max-width: $screen-xs) { 
+	.only-desktop {
+		display:none;
+	}
+
+	.only-mobile {
+		display:initial;
+	}
+}

@@ -1,0 +1,71 @@
+/* Status of the ad */
+
+.ad {
+	
+	max-width: rem(340);	
+	position:relative;
+	margin:auto;
+
+	&.ad--blue {
+		@include blue-gradient();
+		color:#FFF;
+		padding:rem(20) rem(60) rem(20) rem(10);
+		@include border-radius(4);
+		line-height: rem(16);
+
+		&:after {
+			content: '';
+			background: transparent url(../imgs/go-forward-arrow-white.png) no-repeat center center;
+			width:rem(18);
+			height:rem(18);
+			position:absolute;
+			right:7%;
+			top:calc(50% - 9px);
+		}
+
+		.ad_title {
+			font-family: $font-semibold;
+			font-size: rem(14);
+			margin:rem(10) 0;
+		}
+
+		.ad_text {
+			font-size:rem(12);
+			font-family:$font-regular;
+		}
+	}
+
+	&.ad--warning {
+		border: 1px solid $blue-secondary;
+		padding:rem(5) rem(20) rem(40) rem(20);
+		line-height: rem(20);
+
+		.ad_title {
+			margin:rem(15) 0;
+			font-family: $font-semibold;
+			font-size:rem(16);
+		}
+
+		.ad_text {
+			font-family: $font-regular;
+			font-size:rem(14);
+			color: $hierro;
+		}
+	}
+
+	
+	
+	
+}
+
+
+/* --------------- Media Queries ----------------- */
+@media only screen and (max-width: $screen-xs) {
+	.ad {
+		padding:rem(8) rem(60) rem(8) rem(10);
+		.ad_text {
+			font-size: rem(14);
+		}
+
+	}
+}

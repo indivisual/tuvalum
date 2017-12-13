@@ -1,0 +1,124 @@
+.checkout-confirm {
+
+    padding: 0 10px;
+
+    .title {
+        margin: 40px 0 20px;
+    }
+
+    .checkout-confirm--text {
+        line-height: rem(32);
+        font-size: rem(18);
+        color: $hierro;
+        max-width: rem(930);
+        margin: rem(25) auto;
+
+        span {
+            color: $carbon;
+            font-family: $font-semibold;
+        }
+    }
+
+    .checkout-confirm--transfer-data {
+        border:1px solid $palid-blue;
+        @include border-radius(4);
+        line-height: rem(32);
+        font-size: rem(18);
+        max-width: rem(550);
+        margin:rem(25) auto;
+        text-align: left;
+        padding: rem(25);
+        font-family: $font-semibold;
+        color: $carbon;
+
+        span {
+            color: $hierro;
+            font-family: $font-regular;
+        }
+    }
+
+    .checkout-now-what--text {
+        line-height: rem(32);
+        font-size: rem(18);
+        color: $carbon;
+        max-width: rem(930);
+        margin: rem(25) auto 0;
+    }
+    
+    .step-process {
+        margin: rem(30) auto;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        position: relative;
+        max-width: 960px;
+
+        &:before {
+            content: '';
+            position: absolute;
+            border-top: 3px dashed #D6DCE4;
+            width: 80%;
+            margin: auto;
+            display: inline-block;
+            top: 35%;
+            z-index: -1;
+            left: 50%;
+            margin-left: -40%;
+        }
+        
+        .step-process__slide {
+            // flex: 1;
+            width: 29%;
+            padding: 0%;
+            margin: 2%;
+            background: #fff;
+            max-width: rem(283);
+        }
+
+        .step-process__content p {
+            font-size:rem(16);
+            color: $carbon;
+            line-height: rem(24);
+        }
+    }
+
+    .checkout-confirm--buttons {
+        display: flex;
+        max-width: rem(430);
+        margin: auto;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        
+        .btn {
+            padding: rem(17);
+            width: rem(180);
+        }
+    }
+}
+
+
+/* --------------- Media Queries ----------------- */
+
+@media only screen and (max-width: $screen-xs) {
+    .checkout-confirm {
+        .step-process {
+            .step-process__slide {
+                width: 100%; 
+            }
+        }
+
+        .checkout-confirm-transfer {
+            img {
+                width:100%;
+            }
+        }
+
+        .checkout-confirm--buttons {  
+            .btn {
+                width: 100%;
+            }
+        }
+    }
+
+    
+}

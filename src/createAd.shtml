@@ -1,0 +1,45 @@
+<!doctype html>
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8">
+    <title>Tuvalum</title>
+    <meta name="description" content="">
+    
+    <!--#include file="_header.html" -->
+    
+  </head>
+  <body>
+
+	<div class="tvm-create-ad">
+		<div class="belt">
+			<!-- #include file="_createAd/_home.html" -->
+		</div>
+		<!-- #include file="_createAd/_register.html" -->
+
+		<form action="">
+
+			<!-- #include file="_createAd/_step1-type.html" -->
+
+			<!-- #include file="_createAd/_step0-makeAdd.html" -->
+			
+			<!-- #include file="_createAd/_step2-kind.html" -->
+
+			<!-- #include file="_createAd/_step3-more.html" -->
+			
+			<!-- #include file="_createAd/_step4-extras.html" -->
+			
+			<!-- #include file="_createAd/_step5-photos.html" -->
+			
+			<!-- #include file="_createAd/_step7-description.html" -->
+			
+			<!-- #include file="_createAd/_step8-condition.html" -->
+
+			<!-- #include file="_createAd/_step6-add-photo.html" -->
+			
+
+		</form>
+	</div>
+	
+
+
+<!--#include file="_footer.html" -->
