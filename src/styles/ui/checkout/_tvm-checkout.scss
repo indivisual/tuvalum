@@ -61,15 +61,17 @@
     &-content {
       padding: rem(24) rem(54) rem(46);
       width: rem(754);
+      max-height: 90vh;
       color: $carbon;
       @media only screen and (max-width: $screen-sm) {
         padding: rem(56) rem(10);
         height: 100%;
         overflow: auto;
+        max-height: none;
       }
     }
     &-checkout {
-      max-height: 80vh;
+      max-height: calc(80vh - 95px);
       overflow: auto;
       @media only screen and (max-width: $screen-sm) {
         max-height: none;

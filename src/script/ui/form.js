@@ -85,6 +85,7 @@ Tvm.Form = function(){
 	var _api = {};
 
 	function init() {
+		if (!$('.form-wrapper').length) { return true; }
 		// Hook up the form so we can prevent it from being posted
 		var formSubmit = document.querySelector('.form-wrapper button[type=submit]');
 		formSubmit.addEventListener('click', function(ev) {
