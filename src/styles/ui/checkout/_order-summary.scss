@@ -20,6 +20,11 @@
   }
   &__intro {
     padding: rem(16);
+    display: flex;
+    align-items: center;
+    @media only screen and (max-width: $screen-xs) {
+      padding: 0;
+    }
   }
   &__image {
     max-width: rem(133);
@@ -33,22 +38,32 @@
   &__product {
     max-width: calc(100% - 138px);
     display: inline-block;
+    vertical-align: top;
     text-align: left;
+    margin: 0 rem(10);
     &-name {
       font-size: rem(18);
       line-height: rem(32);
       color: $carbon;
+      @media only screen and (max-width: $screen-xs) {
+        font-size: rem(14);
+        line-height: rem(18);
+      }
     }
     &-year {
       color: $plata;
       font-family: $font-semibold;
       font-size: rem(16);
       line-height: rem(24);
+      @media only screen and (max-width: $screen-xs) {
+        font-size: rem(12);
+        line-height: rem(16);
+      }
     }
   }
   &__price {
     width: 100%;
-    padding: rem(26) rem(18);
+    padding: rem(14) rem(18);
     border: 1px solid $platino;
     border-right: 0;
     border-left: 0;
@@ -62,7 +77,6 @@
   }
   &__breakdown {
     padding: rem(8) 0;
-    border-bottom: 1px solid $platino;
     &-item {
       font-size: rem(16);
       line-height: rem(24);
@@ -70,9 +84,17 @@
       padding: rem(8) rem(17);
       display: flex;
       justify-content: space-between;
+      &--hidden {
+        display: none;
+      }
+      span + span {
+        text-align: right;
+        min-width: rem(50);
+      }
     }
   }
   &__discount {
+    border-top: 1px solid $platino;
     &-link {
       display: block;
       color: $blue-secondary;
@@ -133,7 +155,5 @@
 /* --------------- Media Queries ----------------- */
 
 @media only screen and (max-width: $screen-xs) {
-  .order-summary {
-    display: none;
-  }
+  
 }

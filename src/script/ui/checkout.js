@@ -7,6 +7,19 @@ Tvm.Checkout = function(){
 	var estado;
 
 	function init() {
+
+    if (!$('.tvm-checkout').length) {
+      return true;
+    }
+    if ($('.checkout-step-2').length || $('.checkout-step-3').length) {
+      $('.order-summary__discount').hide();
+      if (!isDesktop) {
+        $('.order-summary__price').hide();
+        $('.order-summary__breakdown').hide();
+        $('.order-summary__secure-payment').hide();
+      }
+    }
+
     /* Events */
     showDiscountCodeForm();
     openBoxes();
