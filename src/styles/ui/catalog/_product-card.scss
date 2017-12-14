@@ -1,0 +1,129 @@
+.product-card {
+    max-width: rem(280);
+    width: auto;
+    @include border-radius(5);
+    overflow: hidden;
+    border: 1px solid $platino;
+    margin: rem(10);
+    cursor: pointer;
+    position: relative;
+    overflow: visible;
+
+    &:after {
+        content: '';
+        box-shadow: 0 0px 10px rgba(0,0,0,0.3);
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out;
+        position: absolute;
+        top:0;
+        left:0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+    }
+
+    &:hover::after {
+        opacity: 1;
+    }
+
+    
+
+    .product-card--image-grid {
+        position: relative;
+        font-family: $font-semibold;
+        max-height:rem(180);
+        overflow: hidden;
+        -moz-border-radius: 3px 3px 0 0;
+        border-radius: 3px 3px 0 0;
+
+        .product-data--imagen {
+            width: 100%;
+        }
+
+        .product-data--old-price {
+            color: #FFF;
+            position: absolute;
+            left: rem(10);
+            bottom: rem(40);
+            font-size: rem(16);
+        }
+
+        .product-data--old-price:after {
+            content: '';
+            width: 100%;
+            height: 2px;
+            background: red;
+            position: absolute;
+            left: 0;
+            top: 8px;
+        }
+
+        .product-data--new-price {
+            color: #FFF;
+            position: absolute;
+            left: rem(10);
+            bottom: rem(15);
+            font-size: rem(24);
+        }
+
+        .add-to-favourites {
+            width: rem(30);
+            height: rem(30);
+            background: url(../imgs/catalog/favourites.svg) no-repeat center center/contain;
+            display: block;
+            position: absolute;
+            top: rem(7);
+            right: rem(7);
+
+            &.active {
+                background: url(../imgs/catalog/favourites-active.svg) no-repeat center center/contain;
+            }
+        }
+        
+    }
+
+    .product-card--data-grid {
+        text-align: left;
+        padding:rem(10);
+        
+        .product-card--title {
+            font-size: rem(16);
+            color: $carbon;
+            margin: 0 0 rem(5) 0;
+            font-family: $font-semibold;
+        }
+
+        .product-card--year {
+            font-size: rem(14);
+            color: $hierro;
+            font-family: $font-bold;
+        }
+    }
+
+    .product-card--info-grid {
+        background: $nieve;
+        padding: rem(12);
+        font-size: rem(12);
+        color: $hierro;
+        text-align: left;
+        display: flex;
+        flex-flow: row wrap;
+        line-height: rem(17);
+
+        & > * {
+            white-space: nowrap;
+        }
+
+        & > *:after{
+            content:'·';
+            padding: 0 rem(3);
+        }
+
+        span {
+            font-family: $font-semibold;
+            color: $carbon;
+        }
+    }
+
+    
+}

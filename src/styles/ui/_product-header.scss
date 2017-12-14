@@ -1,0 +1,16 @@
+.product-header-section {
+	margin:0;
+	width:100%;
+    border-bottom: 1px solid #D6DCE4;
+    text-align: left;
+
+	.product-logo-img {
+		margin: rem(13) rem(24);
+	}
+}
+
+/* --------------- Media Queries ----------------- */
+
+@media only screen and (max-width: $screen-xs) {
+
+}
