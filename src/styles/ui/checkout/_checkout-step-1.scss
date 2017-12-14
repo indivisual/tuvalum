@@ -49,6 +49,7 @@
         margin: rem(30) 0;
         display: flex;
         justify-content: space-between;
+        flex-flow: row wrap;
 
         > *:nth-child(1) {
             width: 70%;
@@ -56,6 +57,7 @@
 
         > *:nth-child(2) {
             width: 30%;
+            min-width: 200px;
         }
         
 
