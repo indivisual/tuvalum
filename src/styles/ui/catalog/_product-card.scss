@@ -31,7 +31,6 @@
     .product-card--image-grid {
         position: relative;
         font-family: $font-semibold;
-        max-height:rem(180);
         overflow: hidden;
         -moz-border-radius: 3px 3px 0 0;
         border-radius: 3px 3px 0 0;
@@ -124,6 +123,29 @@
             color: $carbon;
         }
     }
+}
 
-    
+/* --------------- Media Queries ----------------- */
+
+@media only screen and (max-width: $screen-xs) {
+    .product-card {
+        max-width: none;
+        width: 100%;
+        margin: rem(10) 0;
+
+        .product-card--image-grid {
+            min-width: rem(270);
+            min-height: rem(180);
+            
+            .product-data--imagen {
+                width: 100%;
+                position: absolute;
+                left: 0;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+        }
+
+        
+    }
 }
