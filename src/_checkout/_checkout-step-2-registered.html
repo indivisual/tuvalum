@@ -1,10 +1,45 @@
 <div class="checkout-step checkout-step-2 form-wrapper">
+
+    <div class="user-personal-data">
+                
+        <p class="checkout-step-name title">¡Hola Óscar!</p>
+        <p class="checkout-step-title extra-extra-large">Dinos donde quieres que enviemos tu compra:</p>
+
+        <form action="" class="checkout-form">
+            
+            <div class="form-inline">
+                <div class="input-group text-unique" data-validate="false" data-save="nombre">
+                    <label class="label" for="nombre">Nombre</label>
+                    <input class="text-input" type="text" id="nombre" name="nombre" value="Óscar" required="required">
+                </div><!--
+        
+                --><div class="input-group text-unique" data-validate="false" data-save="apellidos">
+                    <label class="label" for="apellidos">Apellidos</label>
+                    <input class="text-input" type="text" id="apellidos" name="apellidos" value="Doe" required="required">
+                </div>
+            </div>
+            
+            <div class="input-group">
+                <label class="label" for="user-email">Email</label>
+                <input class="text-input" type="email" id="user-email" name="user-email" required="required" value="usuario@mail.com">
+            </div>
+
+            <div class="form-inline">
+                <div class="input-group text-unique" data-validate="false" data-save="telefono">
+                    <label class="label" for="telefono">Teléfono</label>
+                    <input class="text-input" type="text" id="telefono" name="telefono" value="656 656 656" required="required">
+                </div><!--
+
+                --><div class="input-group text-unique" data-validate="false" data-save="dni">
+                    <label class="label" for="dni">DNI</label>
+                    <input class="text-input" type="text" id="dni" name="dni" required="required">
+                    <p class="more-info">Te pedimos el DNI para que el vendedor pueda hacerte una factura de compra a tu nombre</p>
+                </div>
+            </div>
+        </form>
+    </div>
     
     <div class="user-address-data">
-            
-        <p class="checkout-step-name title">¡Hola Óscar!</p>
-        <p class="checkout-step-title extra-extra-large">Dinos donde quieres que enviemos tu bicicleta:</p>
-
         <form action="" class="checkout-form">
 
             <div class="grid-display">
