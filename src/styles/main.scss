@@ -11,6 +11,7 @@
 
 /* common */
 @import 'ui/_simple-header';
+@import 'ui/_product-header';
 @import 'ui/_arrow-menu';
 @import 'ui/_need-help-module';
 @import 'ui/_any-doubt-module';
@@ -45,5 +46,7 @@
 }
 
 .tvm-catalog {
+	@import 'ui/catalog/_order-select';
+	@import 'ui/catalog/_catalog-grid';
 	@import 'ui/catalog/_product-card';
 }

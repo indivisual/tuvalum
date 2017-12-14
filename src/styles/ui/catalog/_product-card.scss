@@ -1,17 +1,17 @@
 .product-card {
     max-width: rem(280);
-    width: auto;
+    width: 31%;
     @include border-radius(5);
     overflow: hidden;
     border: 1px solid $platino;
-    margin: rem(10);
+    margin: 1%;
     cursor: pointer;
     position: relative;
     overflow: visible;
 
     &:after {
         content: '';
-        box-shadow: 0 0px 10px rgba(0,0,0,0.3);
+        box-shadow: 0 0px 14px rgba(0,0,0,0.7);
         opacity: 0;
         transition: opacity 0.3s ease-in-out;
         position: absolute;

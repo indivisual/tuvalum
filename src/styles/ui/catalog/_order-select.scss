@@ -1,0 +1,20 @@
+.order-select {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    padding: 1%;
+
+    .order-select--title {
+        align-self: center;
+        margin-right:rem(20);
+        font-size: rem(14);
+        color: $carbon;
+        font-family: $font-semibold;
+        
+    }
+
+    .catalog-order-select {
+        max-width: rem(220);
+        padding: rem(14);
+    }
+}
