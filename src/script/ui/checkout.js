@@ -24,12 +24,21 @@ Tvm.Checkout = function(){
     showDiscountCodeForm();
     openBoxes();
     setupArrowMenu();
+    setupPremiumChoice();
 
     if (isDesktop) {
       setupStickySidebar();
     }
     
-	}
+  }
+  
+
+  function setupPremiumChoice() {
+    $('[data-add=premium]').on('click', function(ev) {
+      ev.preventDefault();
+      $('.order-summary--premium').removeClass('order-summary__breakdown-item--hidden');
+    });
+  }
 
 	
   function showDiscountCodeForm() {
