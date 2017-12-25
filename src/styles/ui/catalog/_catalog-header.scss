@@ -1,0 +1,23 @@
+.catalog-header {
+  
+    border-bottom: 1px solid $platino;
+    padding: rem(15) 0;
+    margin-bottom: rem(6);
+    display: flex;
+    justify-content: space-between;
+    
+    .catalog-header--container {
+        
+        .title {
+            color: $carbon;
+            text-align: left;
+            margin-top: 0;
+        }      
+    }
+
+    img {
+        align-self: center;
+    }
+
+    
+}

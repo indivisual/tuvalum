@@ -1,0 +1,45 @@
+.about-product {
+    text-align: left;
+    color: $hierro;
+    font-size: rem(16);
+    line-height: rem(24);
+
+    .about-product--valoration {
+        display: flex;
+
+        > * {
+            width: 28%;
+            padding: 15px;
+        }
+
+        .about-product--score {
+            width: 44%;
+            display: flex;
+
+            .subtitle {
+                font-size: 18px;
+                color: $carbon;
+                margin-top: 0;
+                margin-bottom:rem(3);
+            }
+        }
+
+        .valoration-list > li {
+            text-indent: 2px;
+            margin: 0 0 15px 0;
+            padding: 0px 0px 0px 24px;
+        }
+
+        .positive-valoration > li {
+            background: url(../imgs/catalog/positive-list-style.png) no-repeat left 3px;
+        }
+
+        .negative-valoration > li {
+            background: url(../imgs/catalog/negative-list-style.png) no-repeat left 3px;
+        }
+    }
+
+    .score-circle {
+        margin: 0 rem(20) 0 0;
+    }
+}

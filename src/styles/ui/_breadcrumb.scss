@@ -1,0 +1,28 @@
+.breadcrumb {
+    text-align: left;
+    padding: rem(20) 0;
+
+    ul {
+        display: flex;
+    }
+
+    li {
+
+        a {
+            color: $hierro;
+            font-family: $font-regular;
+            font-size: rem(16);
+            line-height: rem(24);
+            text-decoration: none;
+            padding:rem(20);
+        }
+
+        &:first-child a {
+            padding-left:0;
+        }
+        
+        & + li:before {
+            content:'>';
+        }
+    }
+}

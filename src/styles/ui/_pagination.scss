@@ -1,0 +1,45 @@
+.pagination {
+    display: flex;
+    justify-content: flex-end;
+    margin: rem(20) 0 rem(40);
+
+    ul {
+        display: flex;
+        justify-content: space-between;
+        justify-items: center;
+        margin:0 rem(10);
+
+        li {
+            margin: rem(5) 0;
+        }
+    }
+
+    a {
+        padding: rem(5) rem(12);
+        font-family: $font-semibold;
+        color: $carbon;
+        text-decoration: none;
+        margin: rem(1) rem(3);
+
+        &.is-current {
+            background: $palid-blue;
+            color: $main-background;
+        }
+    }
+
+    .pagination-previous {
+        background: url(../imgs/pagination/arrow-left.png) no-repeat center center;
+        width: rem(26);
+        height: rem(26);
+        text-indent: -3000px;
+    }
+
+    .pagination-next {
+        background: url(../imgs/pagination/arrow-right.png) no-repeat center center;
+        width: rem(26);
+        height: rem(26);
+        text-indent: -3000px;
+    }
+
+    
+}

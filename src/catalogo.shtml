@@ -31,9 +31,7 @@
 
             <!--#include file="_commons/_pagination.html" -->
 
-            <!--#include file="_catalog/_valoration-section.html" -->
-
-            <!--#include file="_catalog/_description-section.html" -->
+            <!--#include file="_catalog/_about-product.html" -->
             
         </div>
        

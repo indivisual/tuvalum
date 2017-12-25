@@ -16,6 +16,9 @@
 @import 'ui/_arrow-menu';
 @import 'ui/_need-help-module';
 @import 'ui/_any-doubt-module';
+@import 'ui/_breadcrumb';
+@import 'ui/_pagination';
+@import 'ui/_score-circle';
 
 @import 'ui/createad/_tvm-create-ad';
 .tvm-create-ad {
@@ -47,7 +50,9 @@
 }
 
 .tvm-catalog {
+	@import 'ui/catalog/_catalog-header';
 	@import 'ui/catalog/_order-select';
 	@import 'ui/catalog/_catalog-grid';
 	@import 'ui/catalog/_product-card';
+	@import 'ui/catalog/_about-product';
 }
