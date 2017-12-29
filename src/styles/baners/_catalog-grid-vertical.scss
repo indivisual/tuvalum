@@ -1,0 +1,32 @@
+.catalog-grid-vertical {
+	@include blue-gradient();
+	width: 100%;
+	max-width: rem(280);
+	@include border-radius(4);
+	border:0px solid $platino;
+	text-align: left;
+	padding: rem(10) rem(20);
+	margin: 1%;
+	color: #FFF;
+	cursor: pointer;
+	position: relative;
+	text-decoration: none;
+
+	> div {
+	    position: absolute;
+    	bottom: 50px;
+	}
+
+	.title {
+		font-size: rem(24);
+		line-height: rem(30);
+		font-family: $font-semibold;
+		margin-right: 20px;
+	}
+
+	.baner-text {
+		font-size: rem(14);
+		line-height: rem(18);
+		margin-right: 20px;
+	}
+}

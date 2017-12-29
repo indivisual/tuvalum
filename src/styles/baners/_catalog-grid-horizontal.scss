@@ -1,0 +1,17 @@
+.catalog-grid-horizontal {
+	background: $main-background url(../imgs/baners/bg-cat-grid-hz.png) no-repeat right center/contain;
+	width: 97%;
+	@include border-radius(4);
+	border:1px solid $platino;
+	text-align: left;
+	padding: rem(10) rem(20);
+	margin:rem(10) 1%;
+
+	.highlighted {
+		color: $blue-primary;
+	}
+
+	.btn {
+		margin-left:0;
+	}
+}
