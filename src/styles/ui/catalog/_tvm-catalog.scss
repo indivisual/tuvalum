@@ -1,0 +1,15 @@
+.tvm-catalog {
+  .catalog-grid-container {
+    display: flex;
+
+    .filters {
+      width:18%;
+      max-width:rem(245);
+      margin:0 1%;
+    }
+
+    .catalog-grid {
+      width:80%;
+    }
+  }
+}

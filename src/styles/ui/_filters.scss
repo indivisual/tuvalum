@@ -1,0 +1,93 @@
+.filters {
+
+    .filters-option {
+        border-bottom: 1px solid $platino;
+        padding:10px;
+    }
+	
+    .filters-option--header {
+        font-family: $font-semibold;
+        color: $carbon;
+        text-align: left;
+        margin: rem(15) 0;
+        background: url(../imgs/catalog/arrow-up.png) no-repeat center right;
+        cursor: pointer;    
+    }
+
+    .filters-option--header.collapsed {
+        background: url(../imgs/catalog/arrow-down.png) no-repeat center right;
+    }
+
+    .filters-option--container {
+        padding: 1px 0 rem(15);
+        text-align:left;
+    }
+
+    .filters-select {
+        padding: 1rem 2.5rem 1rem 1rem;
+    }
+
+    .filters-checkbox {
+        margin: rem(13) 0;
+    }
+
+
+    .checkbox:checked, 
+    .checkbox:not(:checked) {
+        position: absolute;
+        left: -9999px;
+        opacity: 0
+    }
+
+    .checkbox + label {
+        cursor: pointer;
+        display: inline-block;
+        padding-left: rem(32);
+        padding-top: rem(5);
+        font-size: rem(14);
+        color: $carbon;
+        position: relative;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -html-user-select: none;
+        -ms-user-select: none;
+    }
+
+    .checkbox+label:after, 
+    .checkbox+label:before {
+        content: '';
+        border: 0;
+        @include border-radius(4);
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: rem(26);
+        height: rem(26);
+        z-index: 0;
+        background: $platino;
+    }
+
+    .checkbox+label:before {
+        left: rem(12);
+        top: rem(12);
+        width: rem(1);
+        height: rem(1);
+        transition: all .3s;
+    }
+
+    .checkbox:checked+label:before {
+        background: $palid-blue;
+        -webkit-transform-origin: 100% 100%;
+        transform-origin: 100% 100%;
+        width: rem(24);
+        height: rem(24);
+        z-index: 1;
+        left: 1px;
+        top: 1px;
+    }
+
+    .btn {
+        margin:rem(15) 0;
+        width:100%;
+    }
+}

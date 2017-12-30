@@ -3,9 +3,69 @@
 	width:100%;
     border-bottom: 1px solid #D6DCE4;
     text-align: left;
+    display: flex;
+    justify-content: space-between;
+	align-items: center;
 
 	.product-logo-img {
 		margin: rem(13) rem(24);
+	}
+
+	.header-select {
+		padding: 0 1rem;
+		height: rem(60);
+		color: $carbon;
+		font-family: $font-semibold;
+		font-size: rem(18);
+		background: transparent url(../imgs/catalog/arrow-down.png) no-repeat 97% 58%;
+		max-width: rem(220);
+		border-right: 1px solid $platino;
+		border-left: 1px solid $platino;
+	}
+
+	.header-link {
+		font-family: $font-semibold;
+		color: $carbon;
+		font-size: rem(14);
+		text-decoration: none;
+		padding: rem(10) rem(10) rem(10) rem(32);
+
+		&.header-help {
+			background: transparent url(../imgs/header/help-icon.png) no-repeat center left;
+		}
+
+		&.header-login {
+			background: transparent url(../imgs/header/login-icon.png) no-repeat center left;
+		}
+	}
+
+	.header-searcher {
+		background: $platino url(../imgs/header/lupa-icon.png) no-repeat 10px center;
+		@include border-radius(4);
+		box-shadow: none;
+		border: 0;
+		padding: rem(13) rem(13) rem(13) rem(50);
+		color: $carbon;
+
+		&::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+		  color: $carbon;
+		}
+		&::-moz-placeholder { /* Firefox 19+ */
+		  color: $carbon;
+		}
+		&:-ms-input-placeholder { /* IE 10+ */
+		  color: $carbon;
+		}
+		&:-moz-placeholder { /* Firefox 18- */
+		  color: $carbon;
+		}
+	}
+
+	.btn {
+		padding: 10px 15px;
+		height: auto;
+		font-size: 14px;
+		width: auto;
 	}
 }
 

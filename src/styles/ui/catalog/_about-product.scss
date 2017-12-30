@@ -4,12 +4,30 @@
     font-size: rem(16);
     line-height: rem(24);
 
+    .about-product--header {
+        min-height: rem(345);
+        background: url(../imgs/catalog/argon-header.jpg) no-repeat center center/cover;
+        position: relative;
+
+        .title {
+            color: #FFF;
+            position: absolute;
+            bottom: rem(30);
+            left: rem(36);
+            font-size: rem(40);
+            text-shadow: 1px 1px 1px #505050;
+        }
+    } 
+
     .about-product--valoration {
         display: flex;
+        border-bottom: 1px solid $platino;
+        padding: rem(20) 0;
+
 
         > * {
             width: 28%;
-            padding: 15px;
+            padding: rem(15);
         }
 
         .about-product--score {
@@ -17,7 +35,7 @@
             display: flex;
 
             .subtitle {
-                font-size: 18px;
+                font-size: rem(18);
                 color: $carbon;
                 margin-top: 0;
                 margin-bottom:rem(3);
@@ -26,8 +44,8 @@
 
         .valoration-list > li {
             text-indent: 2px;
-            margin: 0 0 15px 0;
-            padding: 0px 0px 0px 24px;
+            margin: 0 0 rem(15) 0;
+            padding: 0px 0px 0px rem(24);
         }
 
         .positive-valoration > li {
@@ -37,6 +55,52 @@
         .negative-valoration > li {
             background: url(../imgs/catalog/negative-list-style.png) no-repeat left 3px;
         }
+    }
+
+    .extended-valoration {
+        padding: 20px 0;
+        display:flex;
+        justify-content: space-between;
+
+        .extended-valoration--text-container {
+            width:60%;
+        }
+
+        .extended-valoration--quote {
+            width:35%;
+            align-self: center;
+
+            .extended-valoration--quote-text {
+                color: $carbon;
+                font-family: $font-semibold;
+                font-size: rem(24);
+                line-height: rem(36);
+            }
+
+            .extended-valoration--author {
+                display: flex;
+                padding: rem(20) 0;
+
+                img {
+                    margin-right: 10px;
+                } 
+
+                .author-name {
+                    font-family: $font-semibold;
+                    color: $carbon;
+                }
+
+                .author-do {
+                    font-family: $font-regular;
+                    color: $hierro;
+                    display: block;
+                }
+            }
+        }
+    }
+
+    .extended-valoration--text {
+        padding: 10px 0;
     }
 
     .score-circle {

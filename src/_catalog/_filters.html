@@ -1,3 +1,182 @@
-<div class="filters">
-   
+<div class="filters catalog-filters">
+	<ul>
+		<li class="filters-option">
+			<div class="filters-option--header">Precio</div>
+			<div class="filters-option--container">
+				<div class="range-printed">
+					<div class="min-price-printed">100€</div>
+					<div class="max-price-printed">9.600€</div>
+				</div>
+				
+				<div class="range-slider">
+					<input value="0" min="0" max="10000" step="100" type="range" id="min-price" class="min-price">
+		  			<input value="10000" min="0" max="10000" step="100" type="range" id="max-price" class="max-price">
+				</div>
+				
+		 	</div>
+		</li>
+		<li class="filters-option">
+			<div class="filters-option--header">Marca</div>
+			<div class="filters-option--container">
+				<select name="brand-filter" id="brand-filter" class="select filters-select catalog-filter-select" data-filter="marca">
+			        <option value="">Escoge una marca</option>
+			        <option value="argon">Argon</option>
+			        <option value="orbea">Orbea</option>
+			        <option value="otra">Otra</option>
+			    </select>
+			</div>
+		</li>
+		<li class="filters-option">
+			<div class="filters-option--header">Cuadro</div>
+			<div class="filters-option--container">
+				<div class="select-container" data-filter="cuadro">
+					<div class="filters-checkbox">
+						<input type="checkbox" name="cuadro-todos" id="cuadro-todos" class="checkbox filters-checkbox catalog-checkbox-select">
+						<label for="cuadro-todos">Todos</label>
+					</div>
+
+					<div class="filters-checkbox">
+						<input type="checkbox" name="cuadro-aluminio" id="cuadro-aluminio" class="checkbox filters-checkbox catalog-checkbox-select">
+						<label for="cuadro-aluminio">Aluminio</label>
+					</div>
+
+					<div class="filters-checkbox">
+						<input type="checkbox" name="cuadro-carbono" id="cuadro-carbono" class="checkbox filters-checkbox catalog-checkbox-select">
+						<label for="cuadro-carbono">Carbono</label>
+					</div>
+
+					<div class="filters-checkbox">
+						<input type="checkbox" name="cuadro-titanio" id="cuadro-titanio" class="checkbox filters-checkbox catalog-checkbox-select">
+						<label for="cuadro-titanio">Titanio</label>
+					</div>
+
+					<div class="filters-checkbox">
+						<input type="checkbox" name="cuadro-acero" id="cuadro-acero" class="checkbox filters-checkbox catalog-checkbox-select">
+						<label for="cuadro-acero">Acero</label>
+					</div>
+				
+				</div>
+			</div>
+		</li>
+		<li class="filters-option">
+			<div class="filters-option--header">Ruedas</div>
+			<div class="filters-option--container">
+				<div class="select-container" data-filter="ruedas">
+					<div class="filters-checkbox">
+						<input type="checkbox" name="ruedas-todos" id="ruedas-todos" class="checkbox filters-checkbox catalog-checkbox-select">
+						<label for="ruedas-todos">Todos</label>
+					</div>
+
+					<div class="filters-checkbox">
+						<input type="checkbox" name="ruedas-26" id="ruedas-26" class="checkbox filters-checkbox catalog-checkbox-select">
+						<label for="ruedas-26">26"</label>
+					</div>
+
+					<div class="filters-checkbox">
+						<input type="checkbox" name="ruedas-27-5" id="ruedas-27-5" class="checkbox filters-checkbox catalog-checkbox-select">
+						<label for="ruedas-27-5">27,5"</label>
+					</div>
+
+					<div class="filters-checkbox">
+						<input type="checkbox" name="ruedas-29" id="ruedas-29" class="checkbox filters-checkbox catalog-checkbox-select">
+						<label for="ruedas-29">29"</label>
+					</div>
+
+					<div class="filters-checkbox">
+						<input type="checkbox" name="ruedas-fatbike" id="ruedas-fatbike" class="checkbox filters-checkbox catalog-checkbox-select">
+						<label for="ruedas-fatbike">Fatbike</label>
+					</div>
+				
+				</div>
+			</div>
+		</li>
+		<li class="filters-option">
+			<div class="filters-option--header">Suspensión</div>
+			<div class="filters-option--container">
+				<div class="select-container" data-filter="suspension">
+					<div class="filters-checkbox">
+						<input type="checkbox" name="suspension-todos" id="suspension-todos" class="checkbox filters-checkbox catalog-checkbox-select">
+						<label for="suspension-todos">Todos</label>
+					</div>
+
+					<div class="filters-checkbox">
+						<input type="checkbox" name="suspension-rigida" id="suspension-rigida" class="checkbox filters-checkbox catalog-checkbox-select">
+						<label for="suspension-rigida">Rígida</label>
+					</div>
+
+					<div class="filters-checkbox">
+						<input type="checkbox" name="suspension-doble" id="suspension-doble" class="checkbox filters-checkbox catalog-checkbox-select">
+						<label for="suspension-doble">Doble</label>
+					</div>			
+				</div>
+			</div>
+		</li>
+		<li class="filters-option">
+			<div class="filters-option--header">Recorrido</div>
+			<div class="filters-option--container">
+				<div class="select-container" data-filter="recorrido">
+					<div class="filters-checkbox">
+						<input type="checkbox" name="recorrido-todos" id="recorrido-todos" class="checkbox filters-checkbox catalog-checkbox-select">
+						<label for="recorrido-todos">Todos</label>
+					</div>
+
+					<div class="filters-checkbox">
+						<input type="checkbox" name="recorrido-no-tiene" id="recorrido-no-tiene" class="checkbox filters-checkbox catalog-checkbox-select">
+						<label for="recorrido-no-tiene">No tiene</label>
+					</div>
+
+					<div class="filters-checkbox">
+						<input type="checkbox" name="recorrido-80-100" id="recorrido-80-100" class="checkbox filters-checkbox catalog-checkbox-select">
+						<label for="recorrido-80-100">80-100mm</label>
+					</div>
+
+					<div class="filters-checkbox">
+						<input type="checkbox" name="recorrido-100-120" id="recorrido-100-120" class="checkbox filters-checkbox catalog-checkbox-select">
+						<label for="recorrido-100-120">100-120mm</label>
+					</div>
+
+					<div class="filters-checkbox">
+						<input type="checkbox" name="recorrido-120-140" id="recorrido-120-140" class="checkbox filters-checkbox catalog-checkbox-select">
+						<label for="recorrido-120-140">120-140mm</label>
+					</div>
+				
+				</div>
+			</div>
+		</li>
+		<li class="filters-option">
+			<div class="filters-option--header">Cassette</div>
+			<div class="filters-option--container">
+				<div class="select-container" data-filter="cassette">
+					<div class="filters-checkbox">
+						<input type="checkbox" name="cassette-todos" id="cassette-todos" class="checkbox filters-checkbox catalog-checkbox-select">
+						<label for="cassette-todos">Todos</label>
+					</div>
+
+					<div class="filters-checkbox">
+						<input type="checkbox" name="cassette-26" id="cassette-26" class="checkbox filters-checkbox catalog-checkbox-select">
+						<label for="cassette-26">26"</label>
+					</div>
+
+					<div class="filters-checkbox">
+						<input type="checkbox" name="cassette-27-5" id="cassette-27-5" class="checkbox filters-checkbox catalog-checkbox-select">
+						<label for="cassette-27-5">27,5"</label>
+					</div>
+
+					<div class="filters-checkbox">
+						<input type="checkbox" name="cassette-29" id="cassette-29" class="checkbox filters-checkbox catalog-checkbox-select">
+						<label for="cassette-29">29"</label>
+					</div>
+
+					<div class="filters-checkbox">
+						<input type="checkbox" name="cassette-fatbike" id="cassette-fatbike" class="checkbox filters-checkbox catalog-checkbox-select">
+						<label for="cassette-fatbike">Fatbike</label>
+					</div>
+				
+				</div>
+			</div>
+		</li>
+	</ul>
+
+	<a href="#" class="btn btn-right" type="submit" data-filter="apply">Apicar filtros</a>
+
 </div>

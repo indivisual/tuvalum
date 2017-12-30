@@ -80,36 +80,38 @@ var constraints = {
 	}
 };
 
-Tvm.Form = function(){
+Tvm.Form = (function(){
 
 	var _api = {};
 
 	function init() {
-		if (!$('.form-wrapper').length) { return true; }
-		// Hook up the form so we can prevent it from being posted
-		var formSubmit = document.querySelector('.form-wrapper button[type=submit]');
-		formSubmit.addEventListener('click', function(ev) {
-			ev.preventDefault();
-			$(this).parent('.form-wrapper').each(function(index, form) {
-				handleFormSubmit(form);
+
+		if ($('.form-wrapper').length) {
+			// Hook up the form so we can prevent it from being posted
+			var formSubmit = document.querySelector('.form-wrapper button[type=submit]');
+			formSubmit.addEventListener('click', function(ev) {
+				ev.preventDefault();
+				$(this).parent('.form-wrapper').each(function(index, form) {
+					handleFormSubmit(form);
+				});
 			});
-		});
-		
-		// Hook up the inputs to validate on the fly
-		var inputs = document.querySelectorAll("input, textarea, select");
-		for (var i = 0; i < inputs.length; ++i) {
-			inputs.item(i).addEventListener("blur", function(ev) {
-				var form = $(this).parents('form');
-				var errors = validate(form, constraints, {fullMessages: false}) || {};	
-				showErrorsForInput(this, errors[this.name]);
-			});
+			
+			// Hook up the inputs to validate on the fly
+			var inputs = document.querySelectorAll("input, textarea, select");
+			for (var i = 0; i < inputs.length; ++i) {
+				inputs.item(i).addEventListener("blur", function(ev) {
+					var form = $(this).parents('form');
+					var errors = validate(form, constraints, {fullMessages: false}) || {};	
+					showErrorsForInput(this, errors[this.name]);
+				});
+			}
 		}
 	}
 
 	init();
 	return _api;
 
-}();
+})();
 
 	function handleFormSubmit(form, input) {
 		// validate the form aainst the constraints

@@ -21,8 +21,6 @@ Tvm.ScoreCircle = (function(){
         var progress = value / 100;
         var dashoffset = CIRCUMFERENCE * (1 - progress);
         
-        console.log('progress:', value + '%', '|', 'offset:', dashoffset)
-        
         elem.find('.progress__value').css('strokeDashoffset', dashoffset);
     }
 
