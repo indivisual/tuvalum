@@ -4,6 +4,7 @@
   "dependencies": {
     "jquery": "~2.1.4",
     "modernizr": "~2.8.3",
-    "validate": "validate.js#^0.12.0"
+    "validate": "validate.js#^0.12.0",
+    "matchHeight": "matchheight#^0.7.2"
   }
 }

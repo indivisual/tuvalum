@@ -29,8 +29,6 @@
 
             </div>
 
-            <!--#include file="_commons/_pagination.html" -->
-
             <!--#include file="_catalog/_about-product.html" -->
             
         </div>

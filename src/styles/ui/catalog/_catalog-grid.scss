@@ -2,4 +2,48 @@
     display: flex;
     flex-flow: row wrap;
     justify-content: flex-end;
+    align-self: flex-start;
+
+    .grid-product {
+        width:31%;
+        align-self: flex-start;
+    }
+
+    .product-card {
+        order: 1;
+    }
+
+    .product-card:nth-child(n+4) {
+        order: 3;   
+    }
+
+    .product-card:nth-child(n+7) {
+        order: 5;   
+    }
+}
+
+
+
+@media only screen and (min-width: $screen-lg) {
+    .catalog-grid  {
+        .grid-product {
+            width:22.8%;
+        }
+
+        .product-card {
+            order: 1;
+        }
+
+        .product-card:nth-child(n+4) {
+            order: 1;   
+        }
+    
+        .product-card:nth-child(n+6) {
+            order: 3;   
+        }
+    
+        .product-card:nth-child(n+10) {
+            order: 5;   
+        }
+    }
 }
